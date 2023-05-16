@@ -8,90 +8,16 @@
 #include<sstream>
 #include<fstream>
 
+//extern void exportModel(const std::string& filepath, const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices);
 //newmodel is a class which can produce a model when users provide a file path
 
 newmodel::newmodel(const std::string& filepath)
 {
-    // use tiny_obj_loader to load mesh data
-    tinyobj::attrib_t attrib;
-    std::vector<tinyobj::shape_t> shapes;
-    std::vector<tinyobj::material_t> materials;
 
-    std::string warn, err;
-
-    std::string modelPath = filepath;// getAssetFullPath(modelRelPath);
-    std::string::size_type index = modelPath.find_last_of("/");
-    std::string mtlBaseDir = modelPath.substr(0, index + 1);
-
-    if (!tinyobj::LoadObj(
-        &attrib, &shapes, &materials, &warn, &err, modelPath.c_str(), mtlBaseDir.c_str())) {
-        throw std::runtime_error("load " + modelPath + " failure: " + err);
-    }
-
-    if (!warn.empty()) {
-        std::cerr << "Loading model " + modelPath + " warnings: " << std::endl;
-        std::cerr << warn << std::endl;
-    }
-
-    if (!err.empty()) {
-        throw std::runtime_error("Loading model " + modelPath + " error:\n" + err);
-    }
-
-    std::vector<Vertex> vertices;
-    std::vector<uint32_t> indices;
-    std::unordered_map<Vertex, uint32_t> uniqueVertices;
-
-    for (const auto& shape : shapes) {
-        for (const auto& index : shape.mesh.indices) {
-            Vertex vertex{};
-
-            vertex.position.x = attrib.vertices[3 * index.vertex_index + 0];
-            vertex.position.y = attrib.vertices[3 * index.vertex_index + 1];
-            vertex.position.z = attrib.vertices[3 * index.vertex_index + 2];
-
-            if (index.normal_index >= 0) {
-                vertex.normal.x = attrib.normals[3 * index.normal_index + 0];
-                vertex.normal.y = attrib.normals[3 * index.normal_index + 1];
-                vertex.normal.z = attrib.normals[3 * index.normal_index + 2];
-            }
-
-            if (index.texcoord_index >= 0) {
-                vertex.texCoord.x = attrib.texcoords[2 * index.texcoord_index + 0];
-                vertex.texCoord.y = attrib.texcoords[2 * index.texcoord_index + 1];
-            }
-
-            // check if the vertex appeared before to reduce redundant data
-            if (uniqueVertices.count(vertex) == 0) {
-                uniqueVertices[vertex] = static_cast<uint32_t>(vertices.size());
-                vertices.push_back(vertex);
-            }
-
-            indices.push_back(uniqueVertices[vertex]);
-        }
-    }
-
-    _vertices = vertices;
-    _indices = indices;
-    
-    computeBoundingBox();
-    initGLResources();
-    initBoxGLResources();
-
-    GLenum error = glGetError();
-    if (error != GL_NO_ERROR) {
-        cleanup();  // assuming you have a cleanup method defined in your class
-        throw std::runtime_error("OpenGL Error: " + std::to_string(error));
-    }
-    // in this experiment we will not process with any material...
-    // no more code for material preprocess
-
-    // pass the data to the bunny
- 
-    /*
     //key
     //fill in std::vector<Vertex> _vertices;
     //fill in std::vector<uint32_t> _indices;
-
+    
     std::ifstream file(filepath);
 
     if (!file.is_open()) {
@@ -131,6 +57,7 @@ newmodel::newmodel(const std::string& filepath)
         else if (prefix == "vt") {
             glm::vec2 texCoord;
             ss >> texCoord.x >> texCoord.y;
+            texCoord.y = -texCoord.y;
             texCoords.push_back(texCoord);
         }
         else if (prefix == "f")
@@ -147,30 +74,61 @@ newmodel::newmodel(const std::string& filepath)
                 throw std::runtime_error("Invalid face data in file: " + filepath);
             }
 
-            for (size_t i = 1; i <= faceTokens.size(); i++)
-            {
-                std::istringstream faceIss(faceTokens[i - 1]);
-                int posIndex, texCoordIndex, normalIndex;
-                char slash;
+            else if(faceTokens.size()==3)
+                for (size_t i = 1; i <= faceTokens.size(); i++)
+                {
+                    std::istringstream faceIss(faceTokens[i - 1]);
+                    int posIndex, texCoordIndex, normalIndex;
+                    char slash;
 
-                faceIss >> posIndex >> slash >> texCoordIndex >> slash >> normalIndex;
+                    faceIss >> posIndex >> slash >> texCoordIndex >> slash >> normalIndex;
 
-                Vertex v(positions[posIndex - 1], normals[normalIndex - 1], texCoords[texCoordIndex - 1]);
+                    Vertex v(positions[posIndex - 1], normals[normalIndex - 1], texCoords[texCoordIndex - 1]);
 
-                if (uniqueVertices.count(v) == 0) {
-                    uniqueVertices[v] = static_cast<uint32_t>(vertices.size());
-                    vertices.push_back(v);
+                    if (uniqueVertices.count(v) == 0) {
+                        uniqueVertices[v] = static_cast<uint32_t>(vertices.size());
+                        vertices.push_back(v);
+                    }
+
+                    indices.push_back(uniqueVertices[v]);
                 }
 
-                indices.push_back(uniqueVertices[v]);
+            else
+            {
+                uint32_t index[4];
+                for (size_t i = 1; i <= faceTokens.size(); i++)
+                {
+                    std::istringstream faceIss(faceTokens[i - 1]);
+                    int posIndex, texCoordIndex, normalIndex;
+                    char slash;
+
+                    faceIss >> posIndex >> slash >> texCoordIndex >> slash >> normalIndex;
+
+                    Vertex v(positions[posIndex - 1], normals[normalIndex - 1], texCoords[texCoordIndex - 1]);
+
+                    if (uniqueVertices.count(v) == 0) {
+                        uniqueVertices[v] = static_cast<uint32_t>(vertices.size());
+                        vertices.push_back(v);
+                    }
+                    index[i - 1] = uniqueVertices[v];
+                }
+
+                // Add triangle 1 indices
+                indices.push_back(index[0]);
+                indices.push_back(index[1]);
+                indices.push_back(index[2]);
+                // Add triangle 2 indices
+                indices.push_back(index[0]);
+                indices.push_back(index[2]);
+                indices.push_back(index[3]);
             }
         }
-
+        
     }
-
+     
 
     std::cout << "Loaded " << vertices.size() << " vertices and " << indices.size() / 3 << " triangles" << std::endl;
-
+    //std::cout<< indices.max_size()<<std::endl;
 
     _vertices = vertices;
     _indices = indices;
@@ -186,7 +144,9 @@ newmodel::newmodel(const std::string& filepath)
         cleanup();
         throw std::runtime_error("OpenGL Error: " + std::to_string(error));
     }
-    */
+
+    //exportModel("model_export.obj", _vertices, _indices);
+
 }
 
 
@@ -195,7 +155,7 @@ newmodel:: ~newmodel()
     cleanup();
 }
 
-GLuint newmodel::getVao() const
+GLuint newmodel:: getVao() const
 {
     return _vao;
 }
@@ -203,36 +163,36 @@ GLuint newmodel::getVao() const
 
 GLuint newmodel::getBoundingBoxVao() const
 {
-    return _boxVao;
+	return _boxVao;
 }
 
 size_t newmodel::getVertexCount() const
 {
-    return _vertices.size();
+    	return _vertices.size();
 }
 
 size_t newmodel::getFaceCount() const
 {
-    return _indices.size() / 3;
+		return _indices.size() / 3;
 }
 
-BoundingBox newmodel::getBoundingBox() const
+BoundingBox newmodel:: getBoundingBox() const
 {
-    return _boundingBox;
+        return _boundingBox;
 }
 
 void newmodel::draw() const
 {
     glBindVertexArray(_vao);
-    glDrawElements(GL_TRIANGLES, _indices.size(), GL_UNSIGNED_INT, 0);
-    glBindVertexArray(0);
+	glDrawElements(GL_TRIANGLES, _indices.size(), GL_UNSIGNED_INT, 0);
+	glBindVertexArray(0);
 }
 
 void newmodel::drawBoundingBox() const
 {
-    glBindVertexArray(_boxVao);
-    glDrawElements(GL_LINES, 24, GL_UNSIGNED_INT, 0);
-    glBindVertexArray(0);
+	glBindVertexArray(_boxVao);
+	glDrawElements(GL_LINES, 24, GL_UNSIGNED_INT, 0);
+	glBindVertexArray(0);
 }
 
 
@@ -296,29 +256,29 @@ void newmodel::initGLResources()
     glBindVertexArray(0);
 }
 
-void newmodel::initBoxGLResources()
+void newmodel::initBoxGLResources() 
 {
     glGenVertexArrays(1, &_vao);
-    glGenBuffers(1, &_vbo);
-    glGenBuffers(1, &_ebo);
-    glBindVertexArray(_vao);
-    glBindBuffer(GL_ARRAY_BUFFER, _vbo);
+	glGenBuffers(1, &_vbo);
+	glGenBuffers(1, &_ebo);
+	glBindVertexArray(_vao);
+	glBindBuffer(GL_ARRAY_BUFFER, _vbo);
     glBufferData(
-        GL_ARRAY_BUFFER, _vertices.size() * sizeof(Vertex), _vertices.data(),
-        GL_STATIC_DRAW);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ebo);
+		GL_ARRAY_BUFFER, _vertices.size() * sizeof(Vertex), _vertices.data(),
+		GL_STATIC_DRAW);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ebo);
     glBufferData(
-        GL_ELEMENT_ARRAY_BUFFER, _indices.size() * sizeof(uint32_t), _indices.data(),
-        GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), 0);
-    glEnableVertexAttribArray(0);
+		GL_ELEMENT_ARRAY_BUFFER, _indices.size() * sizeof(uint32_t), _indices.data(),
+		GL_STATIC_DRAW);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), 0);
+	glEnableVertexAttribArray(0);
     glVertexAttribPointer(
-        1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
-    glEnableVertexAttribArray(1);
+		1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
+	glEnableVertexAttribArray(1);
     glVertexAttribPointer(
-        2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, texCoord));
-    glEnableVertexAttribArray(2);
-    glBindVertexArray(0);
+		2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, texCoord));
+	glEnableVertexAttribArray(2);
+	glBindVertexArray(0);
 }
 
 void newmodel::cleanup()
