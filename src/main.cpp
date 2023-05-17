@@ -1,4 +1,5 @@
 #include "texture_mapping.h"
+#include "simplefigure.h"
 #include <cstdlib>
 #include <iostream>
 
