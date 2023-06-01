@@ -29,17 +29,21 @@ Triangle::Triangle(){
 
     // specify layout, size of a vertex, data type, normalize, sizeof vertex array, offset of the
     // attribute
-    glVertexAttribPointer(
-        0, 3, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, position));
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, position));
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, color));
+
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, color));
     glEnableVertexAttribArray(1);
+
+    // 启用纹理坐标属性
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, texCoord));
+    glEnableVertexAttribArray(2);
 
     glBindVertexArray(0);
 
     //load texture
     glGenTextures(1, &_textureID);
-    glBindTexture(GL_TEXTURE_2D, _textureID);
+    //glBindTexture(GL_TEXTURE_2D, _textureID);
 
     int width, height, nrChannels;
     unsigned char* data = stbi_load((_assetRootDir+texture_path).c_str(), &width, &height, &nrChannels, 0);
@@ -118,13 +122,13 @@ void Triangle::draw(const glm::mat4& projection, const glm::mat4& view) {
     glBindTexture(GL_TEXTURE_2D, _textureID);
 
     // 设置纹理采样器的uniform值
-    _shader->setUniformInt("texture1", 3); // 纹理单元为3
+    _shader->setUniformInt("texture1", 1); 
     // enable textures and transform textures to gpu
-    simpleMaterial->mapKd->bind(3);
+    simpleMaterial->mapKd->bind(1);
     
     // 绘制代码
     glBindVertexArray(_vao);
     //glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ebo);
-    glDrawElements(GL_TRIANGLES, sizeof(_indices), GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, sizeof(_indices), GL_UNSIGNED_INT, (const void*)sizeof(_indices));
     //glDrawArrays(GL_TRIANGLES, 0, 6);
 }
