@@ -203,13 +203,6 @@ void TextureMapping::initBlendShader() {
 
 void TextureMapping::handleInput() {
 
-    // set input mode
-    /*
-    glfwSetInputMode(_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-    _input.mouse.move.xNow = _input.mouse.move.xOld = 0.5f * _windowWidth;
-    _input.mouse.move.yNow = _input.mouse.move.yOld = 0.5f * _windowHeight;
-    glfwSetCursorPos(_window, _input.mouse.move.xNow, _input.mouse.move.yNow);
-    */
     constexpr float cameraMoveSpeed = 5.0f;
     constexpr float cameraRotateSpeed = 0.02f;
 
@@ -359,18 +352,7 @@ void TextureMapping::renderFrame() {
         _blendShader->setUniformInt("mapKds[1]", 1);
      
         break;
-    case RenderMode::Checker:
-        // 1. use the shader
-        _checkerShader->use();
-        // 2. transfer mvp matrices to gpu
-        _checkerShader->setUniformMat4("projection", projection);
-        _checkerShader->setUniformMat4("view", view);
-        _checkerShader->setUniformMat4("model", mario->transform.getLocalMatrix());
-        // 3. transfer material attributes to gpu
-        _checkerShader->setUniformInt("material.repeat", _checkerMaterial->repeat);
-        _checkerShader->setUniformVec3("material.colors[0]", _checkerMaterial->colors[0]);
-        _checkerShader->setUniformVec3("material.colors[1]", _checkerMaterial->colors[1]);
-        break;
+    
     }
 
     mario->draw();
@@ -402,12 +384,6 @@ void TextureMapping::renderFrame() {
         ImGui::SliderFloat("blend", &_blendMaterial->blend, 0.0f, 1.0f);
         ImGui::NewLine();
 
-        ImGui::RadioButton("Checker Shading", (int*)&_renderMode, (int)(RenderMode::Checker));
-        ImGui::SliderInt("repeat", &_checkerMaterial->repeat, 2, 20);
-        ImGui::ColorEdit3("color1", (float*)&_checkerMaterial->colors[0]);
-        ImGui::ColorEdit3("color2", (float*)&_checkerMaterial->colors[1]);
-        ImGui::Checkbox("wireframe", &wireframe);
-        ImGui::NewLine();
 
         ImGui::Text("Directional light");
         ImGui::Separator();
