@@ -13,6 +13,7 @@ struct SimpleMaterial {
 struct vertex_tri {
     glm::vec3 position;
     glm::vec3 color;
+    glm::vec2 texCoord;
 };
 
 class Triangle {
@@ -28,63 +29,40 @@ private:
     GLuint _vbo = 0;
 
     GLuint _ebo = 0;
+    
 
-    vertex_tri _vertices[48] = {
-        //front
-        { glm::vec3(-0.8f, -0.9f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.8f, -0.7f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.7f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.9f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-
-        //back
-        { glm::vec3(-0.8f, -0.9f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.8f, -0.7f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.7f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.9f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-
-        //left
-        { glm::vec3(-0.8f, -0.9f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.8f, -0.7f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.8f,-0.7f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.8f, -0.9f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-
-        //right
-        { glm::vec3(-0.7f, -0.9f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.7f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f,-0.7f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.9f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-
-        //up
-        { glm::vec3(-0.8f, -0.7f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.8f, -0.7f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.7f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.7f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-
-        //down
-        { glm::vec3(-0.8f, -0.9f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.8f, -0.9f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.9f, -0.2f), glm::vec3(0.0f, 0.0f, 0.0f)},
-        { glm::vec3(-0.7f, -0.9f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f)}
+    // 顶点数组
+    vertex_tri _vertices[8] = {
+        // Front face
+        { glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(0.0f, 0.0f) },
+        { glm::vec3(1.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 0.0f) },
+        { glm::vec3(1.0f, 1.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 1.0f) },
+        { glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(0.0f, 1.0f) },
+        // Back face
+        { glm::vec3(0.0f, 0.0f, -1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(0.0f, 0.0f) },
+        { glm::vec3(1.0f, 0.0f, -1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 0.0f) },
+        { glm::vec3(1.0f, 1.0f, -1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(1.0f, 1.0f) },
+        { glm::vec3(0.0f, 1.0f, -1.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec2(0.0f, 1.0f) }
     };
 
+
+    // 索引数组
     unsigned int _indices[36] = {
-        0, 1, 3,
-        1, 2, 3,
-
-        4, 5, 7,
-        5, 6, 7,
-
-        8, 9, 11,
-        9, 10, 11,
-
-        12, 13, 15,
-        13, 14, 15,
-
-        16, 17, 19,
-        17, 18, 19,
-
-        20, 21, 23,
-        21, 22, 23,
+        // Front face
+        0, 1, 2,
+        2, 3, 0,
+        // Back face
+        4, 5, 6,
+        6, 7, 4,
+        // Left face
+        7, 3, 0,
+        0, 4, 7,
+        // Right face
+        1, 5, 6,
+        6, 2, 1,
+        // Top face
+        7, 6, 2,
+        2, 3, 7
     };
 
     std::unique_ptr<GLSLProgram> _shader;
