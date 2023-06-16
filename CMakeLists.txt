@@ -25,7 +25,7 @@ file(GLOB PROJECT_HDR ${SOURCE_PATH}/*.h)
 file(GLOB PROJECT_SRC ${SOURCE_PATH}/*.cpp)
 
 #generate program
-add_executable(final_project ${PROJECT_SRC} ${PROJECT_HDR} ${BASE_SRC} ${BASE_HDR} "src/base/newmodel.cpp" "src/base/newmodel.h")
+add_executable(final_project ${PROJECT_SRC} ${PROJECT_HDR} ${BASE_SRC} ${BASE_HDR} "src/base/newmodel.h" "src/base/newmodel.cpp" "src/cube.cpp" "src/cube.h"  "src/base/model_export.cpp" "src/model.cpp" "src/model.h" "src/ball.cpp" "src/ball.h")
 
 if (WIN32)
 set_target_properties(${PROJECT_NAME} PROPERTIES
