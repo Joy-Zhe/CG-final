@@ -13,6 +13,10 @@
 #include "cube.h"
 #include"model.h"
 #include"Ball.h"
+#include"prismatic.h"
+#include"pyramid.h"
+#include"cylinder.h"
+
 
 class Drawing : public Application {
 public:
@@ -36,6 +40,9 @@ private:
     Model castle;
 
     Ball ball;
+    Prismatic pris;
+    Pyramid pyramid;
+    Cylinder cylinder;
 
     std::vector<std::unique_ptr<Camera>> _cameras;
     int activeCameraIndex = 0;
