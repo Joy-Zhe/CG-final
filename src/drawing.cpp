@@ -4,7 +4,7 @@
 
 #include "drawing.h"
 
-//½Ó¿Ú
+//æŽ¥å£
 const std::string mario_modelRelPath = "obj/mario (2).obj";
 const std::string mario_2 = "texture/miscellaneous/Frame 34.jpg";
 const std::string mario_1= "texture/miscellaneous/F.jpg";
@@ -18,6 +18,10 @@ const std::string texture_path = "texture/miscellaneous/green1.jpg";
 const std::string texture_path1 = "texture/miscellaneous/lightblue1.jpg";
 const std::string texture_path2 = "texture/miscellaneous/blue1.jpg";
 const std::string texture_land = "texture/miscellaneous/B.jpg";
+const std::string texture_ball = "texture/miscellaneous/blue2.jpg";
+const std::string texture_pris = "texture/miscellaneous/green2.jpg";
+const std::string texture_pyramid = "texture/miscellaneous/lightblue2.jpg";
+const std::string texture_cylinder = "texture/miscellaneous/red2.jpg";
 
 
 //bk ft exchange
@@ -36,21 +40,33 @@ void Drawing::settransform()
     castle.model->transform.position = glm::vec3(50.0f, -10.0f, -100.0f);
     castle.model->transform.rotation = { 1.0f, 0.0f, -0.2f, 0.0f };
 
-    cube.transform.scale = glm::vec3(scale, scale, scale);
+    cube.transform.scale = glm::vec3(1.0f, 1.0f, 1.0f);
     cube.transform.position = glm::vec3(-50.0f, -10.0f, -100.0f);
     cube.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
-    cube1.transform.scale = glm::vec3(scale, scale, scale);
+    cube1.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
     cube1.transform.position = glm::vec3(-30.0f, -10.0f, -100.0f);
     cube1.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
-    cube2.transform.scale = glm::vec3(scale, scale, scale);
+    cube2.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
     cube2.transform.position = glm::vec3(-10.0f, -10.0f, -100.0f);
     cube2.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
-    ball.transform.scale = glm::vec3(scale, scale, scale);
-    ball.transform.position = glm::vec3(-20.0f, -10.0f, -100.0f);
+    ball.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    ball.transform.position = glm::vec3(20.0f, 0.0f, -70.0f);
     ball.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    pris.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    pris.transform.position = glm::vec3(0.0f, 0.0f, -80.0f);
+    pris.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    pyramid.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    pyramid.transform.position = glm::vec3(-10.0f, -10.0f, -80.0f);
+    pyramid.transform.rotation = { 1.0f, -0.6f, 0.0f, 0.0f };
+
+    cylinder.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    cylinder.transform.position = glm::vec3(20.0f, -10.0f, -60.0f);
+    cylinder.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
     land.transform.scale = glm::vec3(150.0f, 100.0f, 100.0f);
     land.transform.position = glm::vec3(-50.0f, -110.0f, -10.0f);
@@ -67,7 +83,10 @@ Drawing::Drawing(const Options& options) :
     land(texture_land),
     mario(mario_modelRelPath, mario_2, mario_1),
     castle(castle_modelRelPath, castle_2, castle_1),
-    ball(texture_path1)
+    ball(texture_ball),
+    pris(texture_pris),
+    pyramid(texture_pyramid),
+    cylinder(texture_cylinder)
 {
 
     // init model
@@ -252,18 +271,16 @@ void Drawing::renderFrame() {
     // draw skybox
     _skybox->draw(projection, view);
 
-    cube.transform.scale = glm::vec3(scale, scale, scale);
     cube.draw(projection,view,_light);
-    
-    cube1.transform.scale = glm::vec3(scale, scale, scale);
     cube1.draw(projection, view, _light);
-
-    cube2.transform.scale = glm::vec3(scale, scale, scale);
     cube2.draw(projection, view, _light);
 
-    //ball.draw(projection, view, _light);
+    ball.draw(projection, view, _light);
+    pris.draw(projection, view, _light);
+    pyramid.draw(projection, view, _light);
 
     land.draw(projection, view, _light);
+    cylinder.draw(projection, view, _light);
 
     // draw ui elements
     ImGui_ImplOpenGL3_NewFrame();
@@ -306,7 +323,18 @@ void Drawing::renderFrame() {
         ImGui::ColorEdit3("color", (float*)&_light->color);
         ImGui::NewLine();
 
-        ImGui::SliderFloat("scale", &scale, 10.0f, 20.0f);
+        ImGui::SliderFloat("length of cube", &cube.transform.scale.x, 10.0f, 20.0f);
+        ImGui::NewLine();
+
+        ImGui::SliderFloat("height of cube", &cube.transform.scale.y, 10.0f, 20.0f);
+        ImGui::NewLine();
+
+        ImGui::SliderFloat("width of cube", &cube.transform.scale.z, 10.0f, 20.0f);
+        ImGui::NewLine();
+
+        ImGui::SliderFloat("radius", &ball.transform.scale.x, 1.0f, 10.0f);
+        ball.transform.scale.y = ball.transform.scale.x;
+        ball.transform.scale.z = ball.transform.scale.x;
         ImGui::NewLine();
 
         ImGui::End();
