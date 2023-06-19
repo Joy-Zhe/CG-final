@@ -19,7 +19,7 @@ public:
 
     void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light);
 
-    float radius = 5.0f; // ÇòÌå°ë¾¶
+    float radius = 1.0f; // çƒä½“åŠå¾„
     Transform transform;
 
 private:
@@ -29,14 +29,14 @@ private:
 
     GLuint _ebo = 0;
 
-    // ¶¥µãÊı×é
-    std::vector<unsigned int> indices;
-    std::vector<struct vertex_tri> vertices;
+    // é¡¶ç‚¹æ•°ç»„
+    unsigned int indices[2400];
+    vertex_tri vertices[441];
 
-    // ÇòÌå²ÎÊı
+    // çƒä½“å‚æ•°
     
-    int sectors = 9; // ¾­¶È»®·ÖµÄ¶ÎÊı
-    int stacks = 9; // Î³¶È»®·ÖµÄ¶ÎÊı
+    int sectors = 9; // ç»åº¦åˆ’åˆ†çš„æ®µæ•°
+    int stacks = 9; // çº¬åº¦åˆ’åˆ†çš„æ®µæ•°
 
     std::unique_ptr<GLSLProgram> _shader;
     GLuint _textureID;
