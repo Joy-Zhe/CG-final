@@ -2,54 +2,51 @@
 
 #include <iostream>
 
+
 void Ball::setdata()
 {
-    // ¶¥µãÊı×é
-    vertices.resize((stacks + 1) * (sectors + 1));
-    indices.resize(stacks * sectors * 6);
+    const int x_segment = 20;
+    const int y_segment = 20;
 
-    // Éú³ÉÇòÌåµÄ¶¥µãÊı×éºÍË÷ÒıÊı×é
-    for (int i = 0; i <= stacks; ++i) {
-        float phi = glm::pi<float>();
-        phi = phi* float(i) / float(stacks);
-        float sinPhi = std::sin(phi);
-        float cosPhi = std::cos(phi);
+    // è®¡ç®—é¡¶ç‚¹å’Œç´¢å¼•æ•°ç»„çš„å¤§å°
+    int vertexCount = (x_segment + 1) * (y_segment + 1);
+    int indexCount = 6 * x_segment * y_segment;
 
-        for (int j = 0; j <= sectors; ++j) {
-            float theta = 2.0f * glm::pi<float>() * j / sectors;
-            float sinTheta = std::sin(theta);
-            float cosTheta = std::cos(theta);
+    // åˆ†é…é¡¶ç‚¹å’Œç´¢å¼•æ•°ç»„çš„å†…å­˜
+    //vertex_tri* vertices = new vertex_tri[vertexCount];
+   // unsigned int* indices = new unsigned int[indexCount];
 
-            float x = cosTheta * sinPhi;
-            float y = cosPhi;
-            float z = sinTheta * sinPhi;
-            float u = static_cast<float>(j) / sectors;
-            float v = static_cast<float>(i) / stacks;
+    // ç”Ÿæˆçƒä½“çš„é¡¶ç‚¹æ•°ç»„å’Œç´¢å¼•æ•°ç»„
+    for (int y = 0; y <= y_segment; y++)
+    {
+        for (int x = 0; x <= x_segment; x++)
+        {
+            float xSegment = (float)x / (float)x_segment;
+            float ySegment = (float)y / (float)y_segment;
+            float xPos = std::cos(xSegment * 2.0f * glm::pi<float>()) * std::sin(ySegment * glm::pi<float>());
+            float yPos = std::cos(ySegment * glm::pi<float>());
+            float zPos = std::sin(xSegment * 2.0f * glm::pi<float>()) * std::sin(ySegment * glm::pi<float>());
 
-            int index = i * (sectors + 1) + j;
-            vertices[index].position = glm::vec3(radius * x, radius * y, radius * z);
-            vertices[index].color = glm::vec3(0.0f, 0.0f, 0.0f); // ÉèÖÃÑÕÉ«
-            vertices[index].texCoord = glm::vec2(u, v);
+            vertex_tri sphereVertex;
+            sphereVertex.position = glm::vec3(radius * xPos, radius * yPos, radius * zPos);
+            sphereVertex.color = glm::vec3(0.0f, 0.0f, 0.0f);
+            sphereVertex.texCoord = glm::vec2((float)x / (float)x_segment, (float)y / (float)y_segment);
+            vertices[y * (x_segment + 1) + x] = sphereVertex;
         }
     }
 
     int index = 0;
-    for (int i = 0; i < stacks; ++i) {
-        int k1 = i * (sectors + 1);
-        int k2 = k1 + sectors + 1;
+    for (int i = 0; i < y_segment; i++)
+    {
+        for (int j = 0; j < x_segment; j++)
+        {
+            indices[index++] = i * (x_segment + 1) + j;
+            indices[index++] = (i + 1) * (x_segment + 1) + j;
+            indices[index++] = (i + 1) * (x_segment + 1) + j + 1;
 
-        for (int j = 0; j < sectors; ++j, ++k1, ++k2) {
-            if (i != 0) {
-                indices[index++] = k1;
-                indices[index++] = k2;
-                indices[index++] = k1 + 1;
-            }
-
-            if (i != stacks - 1) {
-                indices[index++] = k1 + 1;
-                indices[index++] = k2;
-                indices[index++] = k2 + 1;
-            }
+            indices[index++] = i * (x_segment + 1) + j;
+            indices[index++] = (i + 1) * (x_segment + 1) + j + 1;
+            indices[index++] = i * (x_segment + 1) + j + 1;
         }
     }
 
@@ -74,10 +71,10 @@ Ball::Ball(std::string texture_path) {
     glBindVertexArray(_vao);
 
     glBindBuffer(GL_ARRAY_BUFFER, _vbo);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices.data(), GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices , GL_STATIC_DRAW);
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ebo);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), &indices, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     // specify layout, size of a vertex, data type, normalize, sizeof vertex array, offset of the
     // attribute
@@ -87,7 +84,7 @@ Ball::Ball(std::string texture_path) {
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, color));
     glEnableVertexAttribArray(1);
 
-    // ÆôÓÃÎÆÀí×ø±êÊôĞÔ
+    // å¯ç”¨çº¹ç†åæ ‡å±æ€§
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, texCoord));
     glEnableVertexAttribArray(2);
 
@@ -164,13 +161,13 @@ Ball::Ball(std::string texture_path) {
 
         "vec4 Color=texture(texture1, TexCoord);"
 
-        // ¼ÆËã·´Éä¹âÕÕÇ¿¶È
+        // è®¡ç®—åå°„å…‰ç…§å¼ºåº¦
         "   vec3 N = normalize(fNormal);"
         "    vec3 L = normalize(-light.direction);"
         "    float diff = max(dot(N, L), 0.0);"
         "    vec3 diffuse = diff * light.color * light.intensity * Color.rgb;"
 
-        // ¼ÆËã»·¾³¹âÕÕÇ¿¶È
+        // è®¡ç®—ç¯å¢ƒå…‰ç…§å¼ºåº¦
         "    vec3 ambient = light.color * light.intensity*10 * 0.1 * Color.rgb;"
 
         "    vec3 finalColor = ambient + diffuse;"
@@ -205,7 +202,7 @@ void Ball::draw(const glm::mat4& projection, const glm::mat4& view, std::shared_
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, _textureID);
 
-    // ÉèÖÃÎÆÀí²ÉÑùÆ÷µÄuniformÖµ
+    // è®¾ç½®çº¹ç†é‡‡æ ·å™¨çš„uniformå€¼
     _shader->setUniformInt("texture1", 1);
     // enable textures and transform textures to gpu
     simpleMaterial->mapKd->bind(1);
@@ -218,7 +215,7 @@ void Ball::draw(const glm::mat4& projection, const glm::mat4& view, std::shared_
     _shader->setUniformFloat("light.intensity", _light->intensity);
 
 
-    // »æÖÆ´úÂë
+    // ç»˜åˆ¶ä»£ç 
     glBindVertexArray(_vao);
     glDrawElements(GL_TRIANGLES, sizeof(indices), GL_UNSIGNED_INT, 0);
 
