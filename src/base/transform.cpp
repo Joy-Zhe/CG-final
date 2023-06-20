@@ -30,3 +30,25 @@ glm::mat4 Transform::getLocalMatrix() const {
     return glm::translate(glm::mat4(1.0f), position) * glm::mat4_cast(rotation)
            * glm::scale(glm::mat4(1.0f), scale);
 }
+
+void Transform::rotate(float angle, const glm::vec3& axis) {
+    glm::quat rotationDelta = glm::angleAxis(angle, axis);
+    rotation = rotation * rotationDelta;
+}
+
+void Transform::rotateAround(float angle, const glm::vec3& center, const glm::vec3& axis) {
+    // 计算相机当前位置到围绕点的向量
+    glm::vec3 toCenter = center - position;
+
+    // 计算相机当前位置到围绕点的距离
+    float distanceToCenter = glm::length(toCenter);
+
+    // 计算相机当前位置到围绕点的方向
+    glm::vec3 directionToCenter = toCenter / distanceToCenter;
+
+
+    // 计算新的相机位置
+    glm::vec3 newPosition = center + (rotation * (- directionToCenter)) * distanceToCenter;
+
+    position=newPosition;
+}
