@@ -24,6 +24,10 @@ public:
 
     glm::mat4 getLocalMatrix() const;
 
+    //updated
+    void rotate(float angle, const glm::vec3& axis);
+    void Transform::rotateAround(float angle, const glm::vec3& center, const glm::vec3& axis);
+
     static constexpr glm::vec3 getDefaultFront() {
         return {0.0f, 0.0f, -1.0f};
     }
