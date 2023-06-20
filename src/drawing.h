@@ -29,7 +29,9 @@ private:
     std::shared_ptr<DirectionalLight> _light;
 
     std::unique_ptr<SkyBox> _skybox;
-    float scale=10.0;
+
+    //这个东西要和camera的功能连在一起
+    float scale=1.0;
 
     Cube cube;
     Cube cube1;
@@ -47,10 +49,15 @@ private:
     std::vector<std::unique_ptr<Camera>> _cameras;
     int activeCameraIndex = 0;
 
+    float scaleFactor = 1.0;
+    float distance = 90.0f;
+    float angle_cy = 0.0;
+
     enum RenderMode mario_renderMode = RenderMode::Simple;
     enum RenderMode castle_renderMode = RenderMode::Simple;
 
     void settransform();
+    void setscale();
 
     void handleInput() override;
 
