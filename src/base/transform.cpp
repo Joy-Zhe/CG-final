@@ -37,17 +37,17 @@ void Transform::rotate(float angle, const glm::vec3& axis) {
 }
 
 void Transform::rotateAround(float angle, const glm::vec3& center, const glm::vec3& axis) {
-    // è®¡ç®—ç›¸æœºå½“å‰ä½ç½®åˆ°å›´ç»•ç‚¹çš„å‘é‡
+    // ¼ÆËãÏà»úµ±Ç°Î»ÖÃµ½Î§ÈÆµãµÄÏòÁ¿
     glm::vec3 toCenter = center - position;
 
-    // è®¡ç®—ç›¸æœºå½“å‰ä½ç½®åˆ°å›´ç»•ç‚¹çš„è·ç¦»
+    // ¼ÆËãÏà»úµ±Ç°Î»ÖÃµ½Î§ÈÆµãµÄ¾àÀë
     float distanceToCenter = glm::length(toCenter);
 
-    // è®¡ç®—ç›¸æœºå½“å‰ä½ç½®åˆ°å›´ç»•ç‚¹çš„æ–¹å‘
+    // ¼ÆËãÏà»úµ±Ç°Î»ÖÃµ½Î§ÈÆµãµÄ·½Ïò
     glm::vec3 directionToCenter = toCenter / distanceToCenter;
 
 
-    // è®¡ç®—æ–°çš„ç›¸æœºä½ç½®
+    // ¼ÆËãĞÂµÄÏà»úÎ»ÖÃ
     glm::vec3 newPosition = center + (rotation * (- directionToCenter)) * distanceToCenter;
 
     position=newPosition;

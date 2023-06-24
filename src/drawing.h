@@ -30,7 +30,7 @@ private:
 
     std::unique_ptr<SkyBox> _skybox;
 
-    //è¿™ä¸ªä¸œè¥¿è¦å’Œcameraçš„åŠŸèƒ½è¿åœ¨ä¸€èµ·
+    //Õâ¸ö¶«Î÷ÒªºÍcameraµÄ¹¦ÄÜÁ¬ÔÚÒ»Æğ
     float scale=1.0;
 
     Cube cube;

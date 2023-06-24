@@ -30,7 +30,7 @@ public:
     ~PerspectiveCamera() = default;
 
     glm::mat4 getProjectionMatrix() const override;
-
+    glm::mat4 getProjectionMatrix(float scaleFactor);
     virtual Frustum getFrustum() const override;
 };
 

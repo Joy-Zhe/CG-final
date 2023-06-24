@@ -6,7 +6,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include "drawing.h"
 
-//æ¥å£
+//½Ó¿Ú
 const std::string mario_modelRelPath = "obj/mario (2).obj";
 const std::string mario_2 = "texture/miscellaneous/Frame 34.jpg";
 const std::string mario_1= "texture/miscellaneous/F.jpg";
@@ -177,23 +177,23 @@ void rotateCameraAroundObject(Camera& camera, const glm::vec3& objectPosition, f
     
     glm::vec3 toObject = objectPosition - camera.transform.position;
 
-    // è®¡ç®—ç›¸æœºå½“å‰ä½ç½®åˆ°ç‰©ä½“ä¸­å¿ƒçš„è·ç¦»
+    // ¼ÆËãÏà»úµ±Ç°Î»ÖÃµ½ÎïÌåÖĞĞÄµÄ¾àÀë
     float distanceToObject = glm::length(toObject);
 
-    // è®¡ç®—ç›¸æœºå½“å‰ä½ç½®åˆ°ç‰©ä½“ä¸­å¿ƒçš„æ–¹å‘
+    // ¼ÆËãÏà»úµ±Ç°Î»ÖÃµ½ÎïÌåÖĞĞÄµÄ·½Ïò
     glm::vec3 directionToObject = toObject / distanceToObject;
 
-    glm::vec3 axis = glm::vec3(0.0f, 1.0f, 0.0f);  // å›´ç»•Yè½´æ—‹è½¬
+    glm::vec3 axis = glm::vec3(0.0f, 1.0f, 0.0f);  // Î§ÈÆYÖáĞı×ª
 
-    // è®¡ç®—ç›¸æœºå›´ç»•ç‰©ä½“çš„æ—‹è½¬è§’åº¦
+    // ¼ÆËãÏà»úÎ§ÈÆÎïÌåµÄĞı×ª½Ç¶È
     float angle = speed * deltaTime;
 
     glm::quat rotation = glm::angleAxis(angle, axis);
 
-    // å°†æ—‹è½¬åº”ç”¨åˆ°ç›¸æœºå½“å‰ä½ç½®åˆ°ç‰©ä½“ä¸­å¿ƒçš„æ–¹å‘å‘é‡
+    // ½«Ğı×ªÓ¦ÓÃµ½Ïà»úµ±Ç°Î»ÖÃµ½ÎïÌåÖĞĞÄµÄ·½ÏòÏòÁ¿
     directionToObject = rotation * directionToObject;
 
-    // è®¡ç®—æ–°çš„ç›¸æœºä½ç½®
+    // ¼ÆËãĞÂµÄÏà»úÎ»ÖÃ
     glm::vec3 newPosition = objectPosition - directionToObject * distanceToObject;
 
     camera.transform.position = newPosition;
@@ -244,7 +244,7 @@ void Drawing::handleInput() {
 
     }
 
-    //å˜ç„¦
+    //±ä½¹
     constexpr float scrollSpeed = 0.01f;
     if (_input.keyboard.keyStates[GLFW_KEY_UP] == GLFW_PRESS)
     {
@@ -256,7 +256,7 @@ void Drawing::handleInput() {
         scaleFactor *=0.9f;
     }
 
-    // é™åˆ¶ç¼©æ”¾å› å­çš„èŒƒå›´ï¼Œä¾‹å¦‚é˜²æ­¢è¿‡å°æˆ–è¿‡å¤§çš„ç¼©æ”¾
+    // ÏŞÖÆËõ·ÅÒò×ÓµÄ·¶Î§£¬ÀıÈç·ÀÖ¹¹ıĞ¡»ò¹ı´óµÄËõ·Å
     if (scaleFactor < 0.1f)
         scaleFactor = 0.1f;
     if (scaleFactor > 10.0f)
@@ -267,7 +267,7 @@ void Drawing::handleInput() {
         std::cout << "adjust object size" << std::endl;
 
         glm::vec3 toObject = objectPosition - camera->transform.position;
-        // è®¡ç®—ç›¸æœºå½“å‰ä½ç½®åˆ°ç‰©ä½“ä¸­å¿ƒçš„è·ç¦»
+        // ¼ÆËãÏà»úµ±Ç°Î»ÖÃµ½ÎïÌåÖĞĞÄµÄ¾àÀë
         float distanceToObject = glm::length(toObject);
 
        scale= distanceToObject /distance;
@@ -277,7 +277,7 @@ void Drawing::handleInput() {
         return;
     }
 
-    //rotate(æ²¡æœ‰è¦æ±‚çš„)
+    //rotate(Ã»ÓĞÒªÇóµÄ)
     if (_input.mouse.press.middle == GLFW_PRESS)
     {
         if (_input.mouse.move.xNow != _input.mouse.move.xOld) {
@@ -326,7 +326,7 @@ void Drawing::handleInput() {
     
 
 
-    //è‡ªåŠ¨æ—‹è½¬å¯¹å‡†
+    //×Ô¶¯Ğı×ª¶Ô×¼
     if (_input.mouse.press.right == GLFW_PRESS) {
         std::cout << "Right mouse button clicked" << std::endl;
 
@@ -338,7 +338,7 @@ void Drawing::handleInput() {
         camera->transform.rotation = glm::slerp(camera->transform.rotation, targetRotation, rotationSpeed);
     }
 
-    //ç¯ç»•
+    //»·ÈÆ
     if (_input.keyboard.keyStates[GLFW_KEY_O] != GLFW_RELEASE)
     {
         rotateCameraAroundObject(*camera, objectPosition, 0.1f, getDeltaTime());

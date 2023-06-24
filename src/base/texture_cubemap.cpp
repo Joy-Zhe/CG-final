@@ -1,4 +1,4 @@
-﻿#include <cassert>
+#include <cassert>
 #include <stb_image.h>
 
 #include "texture_cubemap.h"

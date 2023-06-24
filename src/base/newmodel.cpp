@@ -8,7 +8,7 @@
 #include<sstream>
 #include<fstream>
 
-//extern void exportModel(const std::string& filepath, const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices);
+extern void  exportModelToObj(const std::string& filepath, const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices);
 //newmodel is a class which can produce a model when users provide a file path
 
 newmodel::newmodel(const std::string& filepath)
@@ -128,7 +128,7 @@ newmodel::newmodel(const std::string& filepath)
      
 
     std::cout << "Loaded " << vertices.size() << " vertices and " << indices.size() / 3 << " triangles" << std::endl;
-    //std::cout<< indices.max_size()<<std::endl;
+    std::cout<< indices.max_size()<<std::endl;
 
     _vertices = vertices;
     _indices = indices;
@@ -139,13 +139,14 @@ newmodel::newmodel(const std::string& filepath)
 
     initBoxGLResources();
 
+    
     GLenum error = glGetError();
     if (error != GL_NO_ERROR) {
-        cleanup();
-        throw std::runtime_error("OpenGL Error: " + std::to_string(error));
+      cleanup();
+       throw std::runtime_error("OpenGL Error: " + std::to_string(error));
     }
-
-    //exportModel("model_export.obj", _vertices, _indices);
+    
+    //exportModelToObj("export.txt", _vertices, _indices);
 
 }
 

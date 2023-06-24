@@ -8,15 +8,15 @@ void Ball::setdata()
     const int x_segment = 20;
     const int y_segment = 20;
 
-    // è®¡ç®—é¡¶ç‚¹å’Œç´¢å¼•æ•°ç»„çš„å¤§å°
+    // ¼ÆËã¶¥µãºÍË÷ÒıÊı×éµÄ´óĞ¡
     int vertexCount = (x_segment + 1) * (y_segment + 1);
     int indexCount = 6 * x_segment * y_segment;
 
-    // åˆ†é…é¡¶ç‚¹å’Œç´¢å¼•æ•°ç»„çš„å†…å­˜
+    // ·ÖÅä¶¥µãºÍË÷ÒıÊı×éµÄÄÚ´æ
     //vertex_tri* vertices = new vertex_tri[vertexCount];
    // unsigned int* indices = new unsigned int[indexCount];
 
-    // ç”Ÿæˆçƒä½“çš„é¡¶ç‚¹æ•°ç»„å’Œç´¢å¼•æ•°ç»„
+    // Éú³ÉÇòÌåµÄ¶¥µãÊı×éºÍË÷ÒıÊı×é
     for (int y = 0; y <= y_segment; y++)
     {
         for (int x = 0; x <= x_segment; x++)
@@ -84,7 +84,7 @@ Ball::Ball(std::string texture_path) {
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, color));
     glEnableVertexAttribArray(1);
 
-    // å¯ç”¨çº¹ç†åæ ‡å±æ€§
+    // ÆôÓÃÎÆÀí×ø±êÊôĞÔ
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(vertex_tri), (void*)offsetof(vertex_tri, texCoord));
     glEnableVertexAttribArray(2);
 
@@ -161,13 +161,13 @@ Ball::Ball(std::string texture_path) {
 
         "vec4 Color=texture(texture1, TexCoord);"
 
-        // è®¡ç®—åå°„å…‰ç…§å¼ºåº¦
+        // ¼ÆËã·´Éä¹âÕÕÇ¿¶È
         "   vec3 N = normalize(fNormal);"
         "    vec3 L = normalize(-light.direction);"
         "    float diff = max(dot(N, L), 0.0);"
         "    vec3 diffuse = diff * light.color * light.intensity * Color.rgb;"
 
-        // è®¡ç®—ç¯å¢ƒå…‰ç…§å¼ºåº¦
+        // ¼ÆËã»·¾³¹âÕÕÇ¿¶È
         "    vec3 ambient = light.color * light.intensity*10 * 0.1 * Color.rgb;"
 
         "    vec3 finalColor = ambient + diffuse;"
@@ -202,7 +202,7 @@ void Ball::draw(const glm::mat4& projection, const glm::mat4& view, std::shared_
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, _textureID);
 
-    // è®¾ç½®çº¹ç†é‡‡æ ·å™¨çš„uniformå€¼
+    // ÉèÖÃÎÆÀí²ÉÑùÆ÷µÄuniformÖµ
     _shader->setUniformInt("texture1", 1);
     // enable textures and transform textures to gpu
     simpleMaterial->mapKd->bind(1);
@@ -215,7 +215,7 @@ void Ball::draw(const glm::mat4& projection, const glm::mat4& view, std::shared_
     _shader->setUniformFloat("light.intensity", _light->intensity);
 
 
-    // ç»˜åˆ¶ä»£ç 
+    // »æÖÆ´úÂë
     glBindVertexArray(_vao);
     glDrawElements(GL_TRIANGLES, sizeof(indices), GL_UNSIGNED_INT, 0);
 

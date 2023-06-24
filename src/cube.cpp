@@ -84,7 +84,7 @@ Cube::Cube(std::string texture_path){
         "out vec3 fNormal;\n"
 
         "void main() {\n"
-        "    gl_Position = projection * view * transform* vec4(aPos, 1.0f);\n"
+        "    gl_Position = projection * view * transform * vec4(aPos, 1.0f);\n"
         "    fNormal = mat3(transpose(inverse(transform))) * aNormal;\n"
         "    color = aColor;\n"
         "    TexCoord = aTexCoord;\n"

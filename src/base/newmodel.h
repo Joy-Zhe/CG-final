@@ -1,5 +1,5 @@
 #pragma once
-#include"tiny_obj_loader.h"
+
 #include <string>
 #include <vector>
 #include "bounding_box.h"
