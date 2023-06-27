@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/external/tinygltf
+# Install script for directory: D:/CG-final/external/tinygltf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "D:/CG-final/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,14 +33,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/build/x64-Debug/external/tinygltf/tinygltf.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/CG-final/out/build/x64-Debug/external/tinygltf/tinygltf.lib")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/TinyGLTFTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/TinyGLTFTargets.cmake"
-         "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/build/x64-Debug/external/tinygltf/CMakeFiles/Export/c220ae0af1591e9e9e916bba91f25986/TinyGLTFTargets.cmake")
+         "D:/CG-final/out/build/x64-Debug/external/tinygltf/CMakeFiles/Export/c220ae0af1591e9e9e916bba91f25986/TinyGLTFTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/TinyGLTFTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -53,22 +53,22 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/build/x64-Debug/external/tinygltf/CMakeFiles/Export/c220ae0af1591e9e9e916bba91f25986/TinyGLTFTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "D:/CG-final/out/build/x64-Debug/external/tinygltf/CMakeFiles/Export/c220ae0af1591e9e9e916bba91f25986/TinyGLTFTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/build/x64-Debug/external/tinygltf/CMakeFiles/Export/c220ae0af1591e9e9e916bba91f25986/TinyGLTFTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "D:/CG-final/out/build/x64-Debug/external/tinygltf/CMakeFiles/Export/c220ae0af1591e9e9e916bba91f25986/TinyGLTFTargets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/build/x64-Debug/external/tinygltf/TinyGLTFConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake" TYPE FILE FILES "D:/CG-final/out/build/x64-Debug/external/tinygltf/TinyGLTFConfig.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/external/tinygltf/json.hpp"
-    "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/external/tinygltf/stb_image.h"
-    "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/external/tinygltf/stb_image_write.h"
-    "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/external/tinygltf/tiny_gltf.h"
+    "D:/CG-final/external/tinygltf/json.hpp"
+    "D:/CG-final/external/tinygltf/stb_image.h"
+    "D:/CG-final/external/tinygltf/stb_image_write.h"
+    "D:/CG-final/external/tinygltf/tiny_gltf.h"
     )
 endif()
 

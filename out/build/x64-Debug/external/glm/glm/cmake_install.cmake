@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/external/glm/glm
+# Install script for directory: D:/CG-final/external/glm/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "D:/CG-final/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

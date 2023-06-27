@@ -1,7 +1,7 @@
-prefix=C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/install/x64-Debug
+prefix=D:/CG-final/out/install/x64-Debug
 exec_prefix=${prefix}
-includedir=C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/install/x64-Debug/include
-libdir=C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/install/x64-Debug/lib
+includedir=D:/CG-final/out/install/x64-Debug/include
+libdir=D:/CG-final/out/install/x64-Debug/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input

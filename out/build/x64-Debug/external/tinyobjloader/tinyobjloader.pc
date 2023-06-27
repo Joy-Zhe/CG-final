@@ -2,7 +2,7 @@
 # file will be overwritten by the next CMake run. The input file was
 # tinyobjloader.pc.in.
 
-prefix=C:/Users/Joy Zheng/Documents/WeChat Files/wxid_3xl3x3188tfz21/FileStorage/File/2023-05/final/out/install/x64-Debug
+prefix=D:/CG-final/out/install/x64-Debug
 exec_prefix=${prefix}
 libdir=${prefix}/lib
 includedir=${prefix}/include
