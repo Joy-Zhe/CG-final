@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:\CG-final\out\build\x64-Debug\
+cmake_ninja_workdir = D$:\code\CG-final\out\build\x64-Debug\
 # =============================================================================
 # Object build statements for EXECUTABLE target final_project
 
@@ -49,161 +49,169 @@ cmake_ninja_workdir = D$:\CG-final\out\build\x64-Debug\
 
 build cmake_object_order_depends_target_final_project: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_stb cmake_object_order_depends_target_tinygltf cmake_object_order_depends_target_tinyobjloader
 
-build CMakeFiles\final_project.dir\src\ball.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\ball.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\ball.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\ball.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\cube.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\cube.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\cube.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\cube.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\cylinder.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\cylinder.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\cylinder.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\cylinder.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\drawing.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\drawing.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\drawing.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\drawing.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\main.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\main.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\main.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\main.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\model.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\model.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\model.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\model.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\prismatic.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\prismatic.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\prismatic.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\prismatic.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\pyramid.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\pyramid.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\pyramid.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\pyramid.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\application.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\application.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\screenShot.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\screenShot.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
+  OBJECT_DIR = CMakeFiles\final_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
+  TARGET_PDB = bin\final_project.pdb
+
+build CMakeFiles\final_project.dir\src\base\application.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\application.cpp || cmake_object_order_depends_target_final_project
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\camera.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\camera.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\camera.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\camera.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\framebuffer.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\framebuffer.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\framebuffer.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\framebuffer.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\fullscreen_quad.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\fullscreen_quad.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\fullscreen_quad.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\fullscreen_quad.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\glsl_program.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\glsl_program.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\glsl_program.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\glsl_program.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\model_export.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\model_export.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\model_export.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\model_export.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\newmodel.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\newmodel.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\newmodel.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\newmodel.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\skybox.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\skybox.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\skybox.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\skybox.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\texture.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\texture.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\texture.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\texture.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\texture2d.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\texture2d.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\texture2d.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\texture2d.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\texture_cubemap.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\texture_cubemap.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\texture_cubemap.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\texture_cubemap.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
   TARGET_PDB = bin\final_project.pdb
 
-build CMakeFiles\final_project.dir\src\base\transform.cpp.obj: CXX_COMPILER__final_project_Debug D$:\CG-final\src\base\transform.cpp || cmake_object_order_depends_target_final_project
+build CMakeFiles\final_project.dir\src\base\transform.cpp.obj: CXX_COMPILER__final_project_Debug D$:\code\CG-final\src\base\transform.cpp || cmake_object_order_depends_target_final_project
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glm -ID:\CG-final\external\glad\include -ID:\CG-final\external\imgui -ID:\CG-final\external\stb -ID:\CG-final\external\tinygltf -ID:\CG-final\external\tinyobjloader -ID:\CG-final\external\glm\glm\.. -ID:\CG-final\external\imgui\. -ID:\CG-final\external\glad\.\include -ID:\CG-final\external\stb\.
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glm -ID:\code\CG-final\external\glad\include -ID:\code\CG-final\external\imgui -ID:\code\CG-final\external\stb -ID:\code\CG-final\external\tinygltf -ID:\code\CG-final\external\tinyobjloader -ID:\code\CG-final\external\glm\glm\.. -ID:\code\CG-final\external\imgui\. -ID:\code\CG-final\external\glad\.\include -ID:\code\CG-final\external\stb\.
   OBJECT_DIR = CMakeFiles\final_project.dir
   OBJECT_FILE_DIR = CMakeFiles\final_project.dir\src\base
   TARGET_COMPILE_PDB = CMakeFiles\final_project.dir\
@@ -217,7 +225,7 @@ build CMakeFiles\final_project.dir\src\base\transform.cpp.obj: CXX_COMPILER__fin
 #############################################
 # Link the executable bin\final_project.exe
 
-build bin\final_project.exe: CXX_EXECUTABLE_LINKER__final_project_Debug CMakeFiles\final_project.dir\src\ball.cpp.obj CMakeFiles\final_project.dir\src\cube.cpp.obj CMakeFiles\final_project.dir\src\cylinder.cpp.obj CMakeFiles\final_project.dir\src\drawing.cpp.obj CMakeFiles\final_project.dir\src\main.cpp.obj CMakeFiles\final_project.dir\src\model.cpp.obj CMakeFiles\final_project.dir\src\prismatic.cpp.obj CMakeFiles\final_project.dir\src\pyramid.cpp.obj CMakeFiles\final_project.dir\src\base\application.cpp.obj CMakeFiles\final_project.dir\src\base\camera.cpp.obj CMakeFiles\final_project.dir\src\base\framebuffer.cpp.obj CMakeFiles\final_project.dir\src\base\fullscreen_quad.cpp.obj CMakeFiles\final_project.dir\src\base\glsl_program.cpp.obj CMakeFiles\final_project.dir\src\base\model_export.cpp.obj CMakeFiles\final_project.dir\src\base\newmodel.cpp.obj CMakeFiles\final_project.dir\src\base\skybox.cpp.obj CMakeFiles\final_project.dir\src\base\texture.cpp.obj CMakeFiles\final_project.dir\src\base\texture2d.cpp.obj CMakeFiles\final_project.dir\src\base\texture_cubemap.cpp.obj CMakeFiles\final_project.dir\src\base\transform.cpp.obj | external\glfw\src\glfw3.lib external\imgui\imgui.lib external\glad\glad.lib external\stb\stb.lib external\tinygltf\tinygltf.lib external\tinyobjloader\tinyobjloader.lib || external\glad\glad.lib external\glfw\src\glfw3.lib external\imgui\imgui.lib external\stb\stb.lib external\tinygltf\tinygltf.lib external\tinyobjloader\tinyobjloader.lib
+build bin\final_project.exe: CXX_EXECUTABLE_LINKER__final_project_Debug CMakeFiles\final_project.dir\src\ball.cpp.obj CMakeFiles\final_project.dir\src\cube.cpp.obj CMakeFiles\final_project.dir\src\cylinder.cpp.obj CMakeFiles\final_project.dir\src\drawing.cpp.obj CMakeFiles\final_project.dir\src\main.cpp.obj CMakeFiles\final_project.dir\src\model.cpp.obj CMakeFiles\final_project.dir\src\prismatic.cpp.obj CMakeFiles\final_project.dir\src\pyramid.cpp.obj CMakeFiles\final_project.dir\src\screenShot.cpp.obj CMakeFiles\final_project.dir\src\base\application.cpp.obj CMakeFiles\final_project.dir\src\base\camera.cpp.obj CMakeFiles\final_project.dir\src\base\framebuffer.cpp.obj CMakeFiles\final_project.dir\src\base\fullscreen_quad.cpp.obj CMakeFiles\final_project.dir\src\base\glsl_program.cpp.obj CMakeFiles\final_project.dir\src\base\model_export.cpp.obj CMakeFiles\final_project.dir\src\base\newmodel.cpp.obj CMakeFiles\final_project.dir\src\base\skybox.cpp.obj CMakeFiles\final_project.dir\src\base\texture.cpp.obj CMakeFiles\final_project.dir\src\base\texture2d.cpp.obj CMakeFiles\final_project.dir\src\base\texture_cubemap.cpp.obj CMakeFiles\final_project.dir\src\base\transform.cpp.obj | external\glfw\src\glfw3.lib external\imgui\imgui.lib external\glad\glad.lib external\stb\stb.lib external\tinygltf\tinygltf.lib external\tinyobjloader\tinyobjloader.lib || external\glad\glad.lib external\glfw\src\glfw3.lib external\imgui\imgui.lib external\stb\stb.lib external\tinygltf\tinygltf.lib external\tinyobjloader\tinyobjloader.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = external\glfw\src\glfw3.lib  external\imgui\imgui.lib  external\glad\glad.lib  external\stb\stb.lib  external\tinygltf\tinygltf.lib  external\tinyobjloader\tinyobjloader.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -234,7 +242,7 @@ build bin\final_project.exe: CXX_EXECUTABLE_LINKER__final_project_Debug CMakeFil
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -245,7 +253,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -263,7 +271,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles\install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -275,7 +283,7 @@ build install: phony CMakeFiles\install.util
 # Utility command for install/local
 
 build CMakeFiles\install\local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -284,7 +292,7 @@ build install\local: phony CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/CMakeLists.txt
+# D:/code/CG-final/CMakeLists.txt
 # =============================================================================
 
 
@@ -292,7 +300,7 @@ build install\local: phony CMakeFiles\install\local.util
 # Utility command for edit_cache
 
 build external\glm\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -303,7 +311,7 @@ build external\glm\edit_cache: phony external\glm\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build external\glm\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -321,7 +329,7 @@ build external\glm\list_install_components: phony
 # Utility command for install
 
 build external\glm\CMakeFiles\install.util: CUSTOM_COMMAND external\glm\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -333,7 +341,7 @@ build external\glm\install: phony external\glm\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\glm\CMakeFiles\install\local.util: CUSTOM_COMMAND external\glm\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -342,7 +350,7 @@ build external\glm\install\local: phony external\glm\CMakeFiles\install\local.ut
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/external/glm/CMakeLists.txt
+# D:/code/CG-final/external/glm/CMakeLists.txt
 # =============================================================================
 
 
@@ -350,7 +358,7 @@ build external\glm\install\local: phony external\glm\CMakeFiles\install\local.ut
 # Utility command for edit_cache
 
 build external\glm\glm\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -361,7 +369,7 @@ build external\glm\glm\edit_cache: phony external\glm\glm\CMakeFiles\edit_cache.
 # Utility command for rebuild_cache
 
 build external\glm\glm\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -379,7 +387,7 @@ build external\glm\glm\list_install_components: phony
 # Utility command for install
 
 build external\glm\glm\CMakeFiles\install.util: CUSTOM_COMMAND external\glm\glm\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -391,7 +399,7 @@ build external\glm\glm\install: phony external\glm\glm\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\glm\glm\CMakeFiles\install\local.util: CUSTOM_COMMAND external\glm\glm\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glm\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glm\glm && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -400,7 +408,7 @@ build external\glm\glm\install\local: phony external\glm\glm\CMakeFiles\install\
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/CMakeLists.txt
+# D:/code/CG-final/CMakeLists.txt
 # =============================================================================
 
 
@@ -414,7 +422,7 @@ build external\glfw\uninstall: phony external\glfw\CMakeFiles\uninstall
 # Utility command for edit_cache
 
 build external\glfw\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -425,7 +433,7 @@ build external\glfw\edit_cache: phony external\glfw\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build external\glfw\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -443,7 +451,7 @@ build external\glfw\list_install_components: phony
 # Utility command for install
 
 build external\glfw\CMakeFiles\install.util: CUSTOM_COMMAND external\glfw\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -455,7 +463,7 @@ build external\glfw\install: phony external\glfw\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\glfw\CMakeFiles\install\local.util: CUSTOM_COMMAND external\glfw\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -467,11 +475,11 @@ build external\glfw\install\local: phony external\glfw\CMakeFiles\install\local.
 # Custom command for external\glfw\CMakeFiles\uninstall
 
 build external\glfw\CMakeFiles\uninstall | ${cmake_ninja_workdir}external\glfw\CMakeFiles\uninstall: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P D:/CG-final/out/build/x64-Debug/external/glfw/cmake_uninstall.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P D:/code/CG-final/out/build/x64-Debug/external/glfw/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/external/glfw/CMakeLists.txt
+# D:/code/CG-final/external/glfw/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -483,190 +491,190 @@ build external\glfw\CMakeFiles\uninstall | ${cmake_ninja_workdir}external\glfw\C
 
 build cmake_object_order_depends_target_glfw: phony || external\glfw\src\CMakeFiles\glfw.dir
 
-build external\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\context.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\init.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\input.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\platform.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\window.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = external\glfw\src\glfw3.pdb
 
-build external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_Debug D$:\CG-final\external\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
+build external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_Debug D$:\code\CG-final\external\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glfw\src -ID:\CG-final\out\build\x64-Debug\external\glfw\src
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glfw\src -ID:\code\CG-final\out\build\x64-Debug\external\glfw\src
   OBJECT_DIR = external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = external\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = external\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -701,7 +709,7 @@ build external\glfw\src\update_mappings: phony external\glfw\src\CMakeFiles\upda
 # Utility command for edit_cache
 
 build external\glfw\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw\src && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -712,7 +720,7 @@ build external\glfw\src\edit_cache: phony external\glfw\src\CMakeFiles\edit_cach
 # Utility command for rebuild_cache
 
 build external\glfw\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw\src && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -730,7 +738,7 @@ build external\glfw\src\list_install_components: phony
 # Utility command for install
 
 build external\glfw\src\CMakeFiles\install.util: CUSTOM_COMMAND external\glfw\src\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw\src && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -742,7 +750,7 @@ build external\glfw\src\install: phony external\glfw\src\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\glfw\src\CMakeFiles\install\local.util: CUSTOM_COMMAND external\glfw\src\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glfw\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glfw\src && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -754,12 +762,12 @@ build external\glfw\src\install\local: phony external\glfw\src\CMakeFiles\instal
 # Custom command for external\glfw\src\CMakeFiles\update_mappings
 
 build external\glfw\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}external\glfw\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\external\glfw\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P D:/CG-final/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\external\glfw\src && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P D:/code/CG-final/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/CMakeLists.txt
+# D:/code/CG-final/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -771,9 +779,9 @@ build external\glfw\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}exter
 
 build cmake_object_order_depends_target_glad: phony || external\glad\CMakeFiles\glad.dir
 
-build external\glad\CMakeFiles\glad.dir\src\gl.c.obj: C_COMPILER__glad_Debug D$:\CG-final\external\glad\src\gl.c || cmake_object_order_depends_target_glad
+build external\glad\CMakeFiles\glad.dir\src\gl.c.obj: C_COMPILER__glad_Debug D$:\code\CG-final\external\glad\src\gl.c || cmake_object_order_depends_target_glad
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glad\.\include
+  INCLUDES = -ID:\code\CG-final\external\glad\.\include
   OBJECT_DIR = external\glad\CMakeFiles\glad.dir
   OBJECT_FILE_DIR = external\glad\CMakeFiles\glad.dir\src
   TARGET_COMPILE_PDB = external\glad\CMakeFiles\glad.dir\glad.pdb
@@ -802,7 +810,7 @@ build external\glad\glad.lib: C_STATIC_LIBRARY_LINKER__glad_Debug external\glad\
 # Utility command for edit_cache
 
 build external\glad\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glad && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -813,7 +821,7 @@ build external\glad\edit_cache: phony external\glad\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build external\glad\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glad && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -831,7 +839,7 @@ build external\glad\list_install_components: phony
 # Utility command for install
 
 build external\glad\CMakeFiles\install.util: CUSTOM_COMMAND external\glad\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glad && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -843,7 +851,7 @@ build external\glad\install: phony external\glad\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\glad\CMakeFiles\install\local.util: CUSTOM_COMMAND external\glad\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\glad && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -852,7 +860,7 @@ build external\glad\install\local: phony external\glad\CMakeFiles\install\local.
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/CMakeLists.txt
+# D:/code/CG-final/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -864,57 +872,57 @@ build external\glad\install\local: phony external\glad\CMakeFiles\install\local.
 
 build cmake_object_order_depends_target_imgui: phony || external\imgui\CMakeFiles\imgui.dir
 
-build external\imgui\CMakeFiles\imgui.dir\imgui.cpp.obj: CXX_COMPILER__imgui_Debug D$:\CG-final\external\imgui\imgui.cpp || cmake_object_order_depends_target_imgui
+build external\imgui\CMakeFiles\imgui.dir\imgui.cpp.obj: CXX_COMPILER__imgui_Debug D$:\code\CG-final\external\imgui\imgui.cpp || cmake_object_order_depends_target_imgui
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glad\include
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glad\include
   OBJECT_DIR = external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = external\imgui\CMakeFiles\imgui.dir
   TARGET_COMPILE_PDB = external\imgui\CMakeFiles\imgui.dir\imgui.pdb
   TARGET_PDB = external\imgui\imgui.pdb
 
-build external\imgui\CMakeFiles\imgui.dir\imgui_demo.cpp.obj: CXX_COMPILER__imgui_Debug D$:\CG-final\external\imgui\imgui_demo.cpp || cmake_object_order_depends_target_imgui
+build external\imgui\CMakeFiles\imgui.dir\imgui_demo.cpp.obj: CXX_COMPILER__imgui_Debug D$:\code\CG-final\external\imgui\imgui_demo.cpp || cmake_object_order_depends_target_imgui
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glad\include
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glad\include
   OBJECT_DIR = external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = external\imgui\CMakeFiles\imgui.dir
   TARGET_COMPILE_PDB = external\imgui\CMakeFiles\imgui.dir\imgui.pdb
   TARGET_PDB = external\imgui\imgui.pdb
 
-build external\imgui\CMakeFiles\imgui.dir\imgui_draw.cpp.obj: CXX_COMPILER__imgui_Debug D$:\CG-final\external\imgui\imgui_draw.cpp || cmake_object_order_depends_target_imgui
+build external\imgui\CMakeFiles\imgui.dir\imgui_draw.cpp.obj: CXX_COMPILER__imgui_Debug D$:\code\CG-final\external\imgui\imgui_draw.cpp || cmake_object_order_depends_target_imgui
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glad\include
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glad\include
   OBJECT_DIR = external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = external\imgui\CMakeFiles\imgui.dir
   TARGET_COMPILE_PDB = external\imgui\CMakeFiles\imgui.dir\imgui.pdb
   TARGET_PDB = external\imgui\imgui.pdb
 
-build external\imgui\CMakeFiles\imgui.dir\imgui_impl_glfw.cpp.obj: CXX_COMPILER__imgui_Debug D$:\CG-final\external\imgui\imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
+build external\imgui\CMakeFiles\imgui.dir\imgui_impl_glfw.cpp.obj: CXX_COMPILER__imgui_Debug D$:\code\CG-final\external\imgui\imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glad\include
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glad\include
   OBJECT_DIR = external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = external\imgui\CMakeFiles\imgui.dir
   TARGET_COMPILE_PDB = external\imgui\CMakeFiles\imgui.dir\imgui.pdb
   TARGET_PDB = external\imgui\imgui.pdb
 
-build external\imgui\CMakeFiles\imgui.dir\imgui_impl_opengl3.cpp.obj: CXX_COMPILER__imgui_Debug D$:\CG-final\external\imgui\imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
+build external\imgui\CMakeFiles\imgui.dir\imgui_impl_opengl3.cpp.obj: CXX_COMPILER__imgui_Debug D$:\code\CG-final\external\imgui\imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glad\include
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glad\include
   OBJECT_DIR = external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = external\imgui\CMakeFiles\imgui.dir
   TARGET_COMPILE_PDB = external\imgui\CMakeFiles\imgui.dir\imgui.pdb
   TARGET_PDB = external\imgui\imgui.pdb
 
-build external\imgui\CMakeFiles\imgui.dir\imgui_tables.cpp.obj: CXX_COMPILER__imgui_Debug D$:\CG-final\external\imgui\imgui_tables.cpp || cmake_object_order_depends_target_imgui
+build external\imgui\CMakeFiles\imgui.dir\imgui_tables.cpp.obj: CXX_COMPILER__imgui_Debug D$:\code\CG-final\external\imgui\imgui_tables.cpp || cmake_object_order_depends_target_imgui
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glad\include
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glad\include
   OBJECT_DIR = external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = external\imgui\CMakeFiles\imgui.dir
   TARGET_COMPILE_PDB = external\imgui\CMakeFiles\imgui.dir\imgui.pdb
   TARGET_PDB = external\imgui\imgui.pdb
 
-build external\imgui\CMakeFiles\imgui.dir\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_Debug D$:\CG-final\external\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
+build external\imgui\CMakeFiles\imgui.dir\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_Debug D$:\code\CG-final\external\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -ID:\CG-final\external\glfw\include -ID:\CG-final\external\glad\include
+  INCLUDES = -ID:\code\CG-final\external\glfw\include -ID:\code\CG-final\external\glad\include
   OBJECT_DIR = external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = external\imgui\CMakeFiles\imgui.dir
   TARGET_COMPILE_PDB = external\imgui\CMakeFiles\imgui.dir\imgui.pdb
@@ -943,7 +951,7 @@ build external\imgui\imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Debug external\
 # Utility command for edit_cache
 
 build external\imgui\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\imgui && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -954,7 +962,7 @@ build external\imgui\edit_cache: phony external\imgui\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build external\imgui\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\imgui && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -972,7 +980,7 @@ build external\imgui\list_install_components: phony
 # Utility command for install
 
 build external\imgui\CMakeFiles\install.util: CUSTOM_COMMAND external\imgui\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\imgui && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -984,7 +992,7 @@ build external\imgui\install: phony external\imgui\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\imgui\CMakeFiles\install\local.util: CUSTOM_COMMAND external\imgui\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\imgui && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -993,7 +1001,7 @@ build external\imgui\install\local: phony external\imgui\CMakeFiles\install\loca
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/CMakeLists.txt
+# D:/code/CG-final/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -1005,14 +1013,14 @@ build external\imgui\install\local: phony external\imgui\CMakeFiles\install\loca
 
 build cmake_object_order_depends_target_stb: phony || external\stb\CMakeFiles\stb.dir
 
-build external\stb\CMakeFiles\stb.dir\stb_image.cpp.obj: CXX_COMPILER__stb_Debug D$:\CG-final\external\stb\stb_image.cpp || cmake_object_order_depends_target_stb
+build external\stb\CMakeFiles\stb.dir\stb_image.cpp.obj: CXX_COMPILER__stb_Debug D$:\code\CG-final\external\stb\stb_image.cpp || cmake_object_order_depends_target_stb
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   OBJECT_DIR = external\stb\CMakeFiles\stb.dir
   OBJECT_FILE_DIR = external\stb\CMakeFiles\stb.dir
   TARGET_COMPILE_PDB = external\stb\CMakeFiles\stb.dir\stb.pdb
   TARGET_PDB = external\stb\stb.pdb
 
-build external\stb\CMakeFiles\stb.dir\stb_vorbis.c.obj: C_COMPILER__stb_Debug D$:\CG-final\external\stb\stb_vorbis.c || cmake_object_order_depends_target_stb
+build external\stb\CMakeFiles\stb.dir\stb_vorbis.c.obj: C_COMPILER__stb_Debug D$:\code\CG-final\external\stb\stb_vorbis.c || cmake_object_order_depends_target_stb
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
   OBJECT_DIR = external\stb\CMakeFiles\stb.dir
   OBJECT_FILE_DIR = external\stb\CMakeFiles\stb.dir
@@ -1042,7 +1050,7 @@ build external\stb\stb.lib: CXX_STATIC_LIBRARY_LINKER__stb_Debug external\stb\CM
 # Utility command for edit_cache
 
 build external\stb\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\stb && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\stb && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1053,7 +1061,7 @@ build external\stb\edit_cache: phony external\stb\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build external\stb\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\stb && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\stb && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1071,7 +1079,7 @@ build external\stb\list_install_components: phony
 # Utility command for install
 
 build external\stb\CMakeFiles\install.util: CUSTOM_COMMAND external\stb\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\stb && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\stb && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1083,7 +1091,7 @@ build external\stb\install: phony external\stb\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\stb\CMakeFiles\install\local.util: CUSTOM_COMMAND external\stb\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\stb && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\stb && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1092,7 +1100,7 @@ build external\stb\install\local: phony external\stb\CMakeFiles\install\local.ut
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/CMakeLists.txt
+# D:/code/CG-final/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -1104,7 +1112,7 @@ build external\stb\install\local: phony external\stb\CMakeFiles\install\local.ut
 
 build cmake_object_order_depends_target_loader_example: phony || external\tinygltf\CMakeFiles\loader_example.dir
 
-build external\tinygltf\CMakeFiles\loader_example.dir\loader_example.cc.obj: CXX_COMPILER__loader_example_Debug D$:\CG-final\external\tinygltf\loader_example.cc || cmake_object_order_depends_target_loader_example
+build external\tinygltf\CMakeFiles\loader_example.dir\loader_example.cc.obj: CXX_COMPILER__loader_example_Debug D$:\code\CG-final\external\tinygltf\loader_example.cc || cmake_object_order_depends_target_loader_example
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   OBJECT_DIR = external\tinygltf\CMakeFiles\loader_example.dir
   OBJECT_FILE_DIR = external\tinygltf\CMakeFiles\loader_example.dir
@@ -1140,7 +1148,7 @@ build external\tinygltf\loader_example.exe: CXX_EXECUTABLE_LINKER__loader_exampl
 
 build cmake_object_order_depends_target_tinygltf: phony || external\tinygltf\CMakeFiles\tinygltf.dir
 
-build external\tinygltf\CMakeFiles\tinygltf.dir\tiny_gltf.cc.obj: CXX_COMPILER__tinygltf_Debug D$:\CG-final\external\tinygltf\tiny_gltf.cc || cmake_object_order_depends_target_tinygltf
+build external\tinygltf\CMakeFiles\tinygltf.dir\tiny_gltf.cc.obj: CXX_COMPILER__tinygltf_Debug D$:\code\CG-final\external\tinygltf\tiny_gltf.cc || cmake_object_order_depends_target_tinygltf
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   OBJECT_DIR = external\tinygltf\CMakeFiles\tinygltf.dir
   OBJECT_FILE_DIR = external\tinygltf\CMakeFiles\tinygltf.dir
@@ -1170,7 +1178,7 @@ build external\tinygltf\tinygltf.lib: CXX_STATIC_LIBRARY_LINKER__tinygltf_Debug 
 # Utility command for edit_cache
 
 build external\tinygltf\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinygltf && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinygltf && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1181,7 +1189,7 @@ build external\tinygltf\edit_cache: phony external\tinygltf\CMakeFiles\edit_cach
 # Utility command for rebuild_cache
 
 build external\tinygltf\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinygltf && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinygltf && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1199,7 +1207,7 @@ build external\tinygltf\list_install_components: phony
 # Utility command for install
 
 build external\tinygltf\CMakeFiles\install.util: CUSTOM_COMMAND external\tinygltf\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinygltf && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinygltf && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1211,7 +1219,7 @@ build external\tinygltf\install: phony external\tinygltf\CMakeFiles\install.util
 # Utility command for install/local
 
 build external\tinygltf\CMakeFiles\install\local.util: CUSTOM_COMMAND external\tinygltf\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinygltf && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinygltf && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1220,7 +1228,7 @@ build external\tinygltf\install\local: phony external\tinygltf\CMakeFiles\instal
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/CG-final/CMakeLists.txt
+# D:/code/CG-final/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -1232,7 +1240,7 @@ build external\tinygltf\install\local: phony external\tinygltf\CMakeFiles\instal
 
 build cmake_object_order_depends_target_tinyobjloader: phony || external\tinyobjloader\CMakeFiles\tinyobjloader.dir
 
-build external\tinyobjloader\CMakeFiles\tinyobjloader.dir\tiny_obj_loader.cc.obj: CXX_COMPILER__tinyobjloader_Debug D$:\CG-final\external\tinyobjloader\tiny_obj_loader.cc || cmake_object_order_depends_target_tinyobjloader
+build external\tinyobjloader\CMakeFiles\tinyobjloader.dir\tiny_obj_loader.cc.obj: CXX_COMPILER__tinyobjloader_Debug D$:\code\CG-final\external\tinyobjloader\tiny_obj_loader.cc || cmake_object_order_depends_target_tinyobjloader
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   OBJECT_DIR = external\tinyobjloader\CMakeFiles\tinyobjloader.dir
   OBJECT_FILE_DIR = external\tinyobjloader\CMakeFiles\tinyobjloader.dir
@@ -1262,7 +1270,7 @@ build external\tinyobjloader\tinyobjloader.lib: CXX_STATIC_LIBRARY_LINKER__tinyo
 # Utility command for edit_cache
 
 build external\tinyobjloader\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinyobjloader && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinyobjloader && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1273,7 +1281,7 @@ build external\tinyobjloader\edit_cache: phony external\tinyobjloader\CMakeFiles
 # Utility command for rebuild_cache
 
 build external\tinyobjloader\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinyobjloader && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CG-final -BD:\CG-final\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinyobjloader && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SD:\code\CG-final -BD:\code\CG-final\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1291,7 +1299,7 @@ build external\tinyobjloader\list_install_components: phony
 # Utility command for install
 
 build external\tinyobjloader\CMakeFiles\install.util: CUSTOM_COMMAND external\tinyobjloader\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinyobjloader && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinyobjloader && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1303,7 +1311,7 @@ build external\tinyobjloader\install: phony external\tinyobjloader\CMakeFiles\in
 # Utility command for install/local
 
 build external\tinyobjloader\CMakeFiles\install\local.util: CUSTOM_COMMAND external\tinyobjloader\all
-  COMMAND = cmd.exe /C "cd /D D:\CG-final\out\build\x64-Debug\external\tinyobjloader && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\code\CG-final\out\build\x64-Debug\external\tinyobjloader && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1355,70 +1363,70 @@ build update_mappings: phony external\glfw\src\update_mappings
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug
+# Folder: D:/code/CG-final/out/build/x64-Debug
 
 build all: phony bin\final_project.exe external\glm\all external\glfw\all external\glad\all external\imgui\all external\stb\all external\tinygltf\all external\tinyobjloader\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/glad
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/glad
 
 build external\glad\all: phony external\glad\glad.lib
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/glfw
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/glfw
 
 build external\glfw\all: phony external\glfw\src\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/glfw/src
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/glfw/src
 
 build external\glfw\src\all: phony external\glfw\src\glfw3.lib
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/glm
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/glm
 
 build external\glm\all: phony external\glm\glm\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/glm/glm
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/glm/glm
 
 build external\glm\glm\all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/imgui
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/imgui
 
 build external\imgui\all: phony external\imgui\imgui.lib
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/stb
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/stb
 
 build external\stb\all: phony external\stb\stb.lib
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/tinygltf
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/tinygltf
 
 build external\tinygltf\all: phony external\tinygltf\loader_example.exe external\tinygltf\tinygltf.lib
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CG-final/out/build/x64-Debug/external/tinyobjloader
+# Folder: D:/code/CG-final/out/build/x64-Debug/external/tinyobjloader
 
 build external\tinyobjloader\all: phony external\tinyobjloader\tinyobjloader.lib
 
@@ -1429,14 +1437,14 @@ build external\tinyobjloader\all: phony external\tinyobjloader\tinyobjloader.lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake D$:\CG-final\CMakeLists.txt D$:\CG-final\external\glad\CMakeLists.txt D$:\CG-final\external\glfw\CMakeLists.txt D$:\CG-final\external\glfw\CMake\cmake_uninstall.cmake.in D$:\CG-final\external\glfw\CMake\glfw3.pc.in D$:\CG-final\external\glfw\CMake\glfw3Config.cmake.in D$:\CG-final\external\glfw\src\CMakeLists.txt D$:\CG-final\external\glm\CMakeLists.txt D$:\CG-final\external\glm\glm\CMakeLists.txt D$:\CG-final\external\imgui\CMakeLists.txt D$:\CG-final\external\stb\CMakeLists.txt D$:\CG-final\external\tinygltf\CMakeLists.txt D$:\CG-final\external\tinygltf\cmake\TinyGLTFConfig.cmake.in D$:\CG-final\external\tinyobjloader\CMakeLists.txt D$:\CG-final\external\tinyobjloader\tinyobjloader-config.cmake.in D$:\CG-final\external\tinyobjloader\tinyobjloader.pc.in
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake D$:\code\CG-final\CMakeLists.txt D$:\code\CG-final\external\glad\CMakeLists.txt D$:\code\CG-final\external\glfw\CMakeLists.txt D$:\code\CG-final\external\glfw\CMake\cmake_uninstall.cmake.in D$:\code\CG-final\external\glfw\CMake\glfw3.pc.in D$:\code\CG-final\external\glfw\CMake\glfw3Config.cmake.in D$:\code\CG-final\external\glfw\src\CMakeLists.txt D$:\code\CG-final\external\glm\CMakeLists.txt D$:\code\CG-final\external\glm\glm\CMakeLists.txt D$:\code\CG-final\external\imgui\CMakeLists.txt D$:\code\CG-final\external\stb\CMakeLists.txt D$:\code\CG-final\external\tinygltf\CMakeLists.txt D$:\code\CG-final\external\tinygltf\cmake\TinyGLTFConfig.cmake.in D$:\code\CG-final\external\tinyobjloader\CMakeLists.txt D$:\code\CG-final\external\tinyobjloader\tinyobjloader-config.cmake.in D$:\code\CG-final\external\tinyobjloader\tinyobjloader.pc.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindDoxygen.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindThreads.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake D$:\CG-final\CMakeLists.txt D$:\CG-final\external\glad\CMakeLists.txt D$:\CG-final\external\glfw\CMakeLists.txt D$:\CG-final\external\glfw\CMake\cmake_uninstall.cmake.in D$:\CG-final\external\glfw\CMake\glfw3.pc.in D$:\CG-final\external\glfw\CMake\glfw3Config.cmake.in D$:\CG-final\external\glfw\src\CMakeLists.txt D$:\CG-final\external\glm\CMakeLists.txt D$:\CG-final\external\glm\glm\CMakeLists.txt D$:\CG-final\external\imgui\CMakeLists.txt D$:\CG-final\external\stb\CMakeLists.txt D$:\CG-final\external\tinygltf\CMakeLists.txt D$:\CG-final\external\tinygltf\cmake\TinyGLTFConfig.cmake.in D$:\CG-final\external\tinyobjloader\CMakeLists.txt D$:\CG-final\external\tinyobjloader\tinyobjloader-config.cmake.in D$:\CG-final\external\tinyobjloader\tinyobjloader.pc.in: phony
+build CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake D$:\code\CG-final\CMakeLists.txt D$:\code\CG-final\external\glad\CMakeLists.txt D$:\code\CG-final\external\glfw\CMakeLists.txt D$:\code\CG-final\external\glfw\CMake\cmake_uninstall.cmake.in D$:\code\CG-final\external\glfw\CMake\glfw3.pc.in D$:\code\CG-final\external\glfw\CMake\glfw3Config.cmake.in D$:\code\CG-final\external\glfw\src\CMakeLists.txt D$:\code\CG-final\external\glm\CMakeLists.txt D$:\code\CG-final\external\glm\glm\CMakeLists.txt D$:\code\CG-final\external\imgui\CMakeLists.txt D$:\code\CG-final\external\stb\CMakeLists.txt D$:\code\CG-final\external\tinygltf\CMakeLists.txt D$:\code\CG-final\external\tinygltf\cmake\TinyGLTFConfig.cmake.in D$:\code\CG-final\external\tinyobjloader\CMakeLists.txt D$:\code\CG-final\external\tinyobjloader\tinyobjloader-config.cmake.in D$:\code\CG-final\external\tinyobjloader\tinyobjloader.pc.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindDoxygen.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindThreads.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake D$:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake: phony
 
 
 #############################################

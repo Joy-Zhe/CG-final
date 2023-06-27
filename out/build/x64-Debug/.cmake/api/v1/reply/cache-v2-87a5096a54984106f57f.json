@@ -27,7 +27,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/lib.exe"
+			"value" : "D:/code/IDE/VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/lib.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -51,7 +51,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/CG-final/out/build/x64-Debug"
+			"value" : "d:/code/CG-final/out/build/x64-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -99,7 +99,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe"
+			"value" : "D:/code/IDE/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -111,7 +111,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe"
+			"value" : "D:/code/IDE/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -123,7 +123,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe"
+			"value" : "D:/code/IDE/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe"
+			"value" : "D:/code/IDE/VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -251,7 +251,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe"
+			"value" : "D:/code/IDE/VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/CG-final"
+			"value" : "D:/code/CG-final"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/CG-final/out/install/x64-Debug"
+			"value" : "D:/code/CG-final/out/install/x64-Debug"
 		},
 		{
 			"name" : "CMAKE_INSTALL_RUNSTATEDIR",
@@ -859,7 +859,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/link.exe"
+			"value" : "D:/code/IDE/VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/link.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -867,11 +867,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "make program"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe"
+			"type" : "UNINITIALIZED",
+			"value" : "D:\\CODE\\IDE\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -967,7 +967,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Windows Kits/10/bin/10.0.22000.0/x64/mt.exe"
+			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/mt.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -1115,7 +1115,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Windows Kits/10/bin/10.0.22000.0/x64/rc.exe"
+			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1219,7 +1219,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25"
+			"value" : "D:/code/IDE/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1467,7 +1467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/external/glfw"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/external/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1587,7 +1587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/external/glfw"
+			"value" : "D:/code/CG-final/external/glfw"
 		},
 		{
 			"name" : "GLFW_USE_HYBRID_HPG",
@@ -1731,7 +1731,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/CG-final/out/install/x64-Debug"
+			"value" : "D:/code/CG-final/out/install/x64-Debug"
 		},
 		{
 			"name" : "final_project_BINARY_DIR",
@@ -1743,7 +1743,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug"
+			"value" : "D:/code/CG-final/out/build/x64-Debug"
 		},
 		{
 			"name" : "final_project_IS_TOP_LEVEL",
@@ -1767,7 +1767,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final"
+			"value" : "D:/code/CG-final"
 		},
 		{
 			"name" : "glad_BINARY_DIR",
@@ -1779,7 +1779,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/external/glad"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/external/glad"
 		},
 		{
 			"name" : "glad_IS_TOP_LEVEL",
@@ -1803,7 +1803,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/external/glad"
+			"value" : "D:/code/CG-final/external/glad"
 		},
 		{
 			"name" : "glm_BINARY_DIR",
@@ -1815,7 +1815,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/external/glm"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/external/glm"
 		},
 		{
 			"name" : "glm_IS_TOP_LEVEL",
@@ -1839,7 +1839,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/external/glm"
+			"value" : "D:/code/CG-final/external/glm"
 		},
 		{
 			"name" : "imgui_BINARY_DIR",
@@ -1851,7 +1851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/external/imgui"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/external/imgui"
 		},
 		{
 			"name" : "imgui_IS_TOP_LEVEL",
@@ -1875,7 +1875,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/external/imgui"
+			"value" : "D:/code/CG-final/external/imgui"
 		},
 		{
 			"name" : "stb_BINARY_DIR",
@@ -1887,7 +1887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/external/stb"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/external/stb"
 		},
 		{
 			"name" : "stb_IS_TOP_LEVEL",
@@ -1911,7 +1911,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/external/stb"
+			"value" : "D:/code/CG-final/external/stb"
 		},
 		{
 			"name" : "tinygltf_BINARY_DIR",
@@ -1923,7 +1923,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/external/tinygltf"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/external/tinygltf"
 		},
 		{
 			"name" : "tinygltf_IS_TOP_LEVEL",
@@ -1947,7 +1947,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/external/tinygltf"
+			"value" : "D:/code/CG-final/external/tinygltf"
 		},
 		{
 			"name" : "tinyobjloader_BINARY_DIR",
@@ -1959,7 +1959,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/out/build/x64-Debug/external/tinyobjloader"
+			"value" : "D:/code/CG-final/out/build/x64-Debug/external/tinyobjloader"
 		},
 		{
 			"name" : "tinyobjloader_IS_TOP_LEVEL",
@@ -1983,7 +1983,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/CG-final/external/tinyobjloader"
+			"value" : "D:/code/CG-final/external/tinyobjloader"
 		}
 	],
 	"kind" : "cache",

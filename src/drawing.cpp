@@ -7,7 +7,7 @@
 #include "drawing.h"
 
 //½Ó¿Ú
-const std::string mario_modelRelPath = "obj/mario (2).obj";
+const std::string mario_modelRelPath[6] = {"obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj" };
 const std::string mario_2 = "texture/miscellaneous/Frame 34.jpg";
 const std::string mario_1= "texture/miscellaneous/F.jpg";
 
@@ -107,7 +107,7 @@ Drawing::Drawing(const Options& options) :
     cube1(texture_path1),
     cube2(texture_path2),
     land(texture_land),
-    mario(mario_modelRelPath, mario_2, mario_1),
+    mario(mario_modelRelPath[0], mario_2, mario_1),
     castle(castle_modelRelPath, castle_2, castle_1),
     ball(texture_ball),
     pris(texture_pris),
@@ -419,7 +419,9 @@ void Drawing::renderFrame(){
     projection[1][1] /= scaleFactor;
 
     const glm::mat4 view = _cameras[activeCameraIndex]->getViewMatrix();
-
+    int i;
+    i = ((int)(glfwGetTime() * 10.0f)) / 10 % 6;
+    mario.setModel(mario_modelRelPath, mario_2, mario_1, i);
    
     switch (mario_renderMode) {
     case RenderMode::Simple:

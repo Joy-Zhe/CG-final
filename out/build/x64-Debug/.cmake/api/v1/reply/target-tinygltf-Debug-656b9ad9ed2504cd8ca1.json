@@ -89,7 +89,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "D:/CG-final/out/install/x64-Debug"
+			"path" : "D:/code/CG-final/out/install/x64-Debug"
 		}
 	},
 	"name" : "tinygltf",

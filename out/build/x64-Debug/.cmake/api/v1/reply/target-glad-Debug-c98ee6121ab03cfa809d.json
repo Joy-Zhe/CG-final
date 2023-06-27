@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "external/tinyobjloader/tinyobjloader.lib"
+			"path" : "external/glad/glad.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -21,11 +21,11 @@
 		"commands" : 
 		[
 			"add_library",
-			"install"
+			"target_include_directories"
 		],
 		"files" : 
 		[
-			"external/tinyobjloader/CMakeLists.txt"
+			"external/glad/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -35,13 +35,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 49,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 118,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -52,37 +52,30 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd"
+					"fragment" : "/DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd"
 				}
 			],
-			"language" : "CXX",
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "D:/code/CG-final/external/glad/./include"
+				}
+			],
+			"language" : "C",
 			"sourceIndexes" : 
 			[
-				1
+				2
 			]
 		}
 	],
-	"id" : "tinyobjloader::@1d01870daa05c476c342",
-	"install" : 
-	{
-		"destinations" : 
-		[
-			{
-				"backtrace" : 2,
-				"path" : "lib"
-			}
-		],
-		"prefix" : 
-		{
-			"path" : "D:/CG-final/out/install/x64-Debug"
-		}
-	},
-	"name" : "tinyobjloader",
-	"nameOnDisk" : "tinyobjloader.lib",
+	"id" : "glad::@55512df44c152ef9a2ca",
+	"name" : "glad",
+	"nameOnDisk" : "glad.lib",
 	"paths" : 
 	{
-		"build" : "external/tinyobjloader",
-		"source" : "external/tinyobjloader"
+		"build" : "external/glad",
+		"source" : "external/glad"
 	},
 	"sourceGroups" : 
 	[
@@ -90,14 +83,15 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				1
+				2
 			]
 		}
 	],
@@ -105,13 +99,18 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "external/tinyobjloader/tiny_obj_loader.h",
+			"path" : "external/glad/include/glad/gl.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "external/glad/include/KHR/khrplatform.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "external/tinyobjloader/tiny_obj_loader.cc",
+			"path" : "external/glad/src/gl.c",
 			"sourceGroupIndex" : 1
 		}
 	],

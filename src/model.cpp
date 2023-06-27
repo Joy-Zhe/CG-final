@@ -33,6 +33,34 @@ Model::Model(std::string newmodelRelPath, std::string wall2, std::string wall1){
 
 }
 
+void Model::setModel(const std::string newmodelRelPath[6], std::string wall2, std::string wall1, int i)
+{
+    // init textures
+    std::string _assetRootDir = "../media/";
+
+    std::shared_ptr<Texture2D> texture1 = std::make_shared<ImageTexture2D>(_assetRootDir + wall1);
+    std::shared_ptr<Texture2D> texture2 = std::make_shared<ImageTexture2D>(_assetRootDir + wall2);
+    
+
+    model.reset(new newmodel(_assetRootDir + newmodelRelPath[i]));
+    
+
+    // init materials
+    _simpleMaterial.reset(new SimpleMaterial);
+    _simpleMaterial->mapKd = texture2;
+
+    _blendMaterial.reset(new BlendMaterial);
+    _blendMaterial->kds[0] = glm::vec3(1.0f, 1.0f, 1.0f);
+    _blendMaterial->kds[1] = glm::vec3(1.0f, 1.0f, 1.0f);
+    _blendMaterial->mapKds[0] = texture2;
+    _blendMaterial->mapKds[1] = texture1;
+    _blendMaterial->blend = 0.0f;
+
+    // init shaders
+    initSimpleShader();
+    initBlendShader();
+}
+
 Model::~Model() {
    
 }

@@ -1,7 +1,7 @@
-prefix=D:/CG-final/out/install/x64-Debug
+prefix=D:/code/CG-final/out/install/x64-Debug
 exec_prefix=${prefix}
-includedir=D:/CG-final/out/install/x64-Debug/include
-libdir=D:/CG-final/out/install/x64-Debug/lib
+includedir=D:/code/CG-final/out/install/x64-Debug/include
+libdir=D:/code/CG-final/out/install/x64-Debug/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input

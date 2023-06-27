@@ -65,11 +65,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/CG-final/external/glfw/include"
+					"path" : "D:/code/CG-final/external/glfw/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/CG-final/external/glad/include"
+					"path" : "D:/code/CG-final/external/glad/include"
 				}
 			],
 			"language" : "CXX",

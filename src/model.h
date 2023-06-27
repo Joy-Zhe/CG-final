@@ -33,6 +33,11 @@ public:
 
     Model(std::string newmodelRelPath, std::string wall2, std::string wall1);
 
+    void setModel(const std::string newmodelRelPath[6], std::string wall2, std::string wall1, int i);
+
+    //Model(const std::string newmodelRelPath[6], std::string wall2, std::string wall1);
+
+
     void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light, glm::vec3 position, std::shared_ptr<AmbientLight> _ambientLight, std::shared_ptr<SpotLight> _spotLight, std::shared_ptr<Material> _material);
 
     void setRenderMode(RenderMode mode);

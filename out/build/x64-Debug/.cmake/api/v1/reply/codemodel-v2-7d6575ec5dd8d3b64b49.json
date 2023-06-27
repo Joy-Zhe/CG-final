@@ -286,28 +286,28 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "final_project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-final_project-Debug-f2aebbf4cf4cfa6f2633.json",
+					"jsonFile" : "target-final_project-Debug-79634974023248f7198b.json",
 					"name" : "final_project",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "glad::@55512df44c152ef9a2ca",
-					"jsonFile" : "target-glad-Debug-19718f81b1d4e0e0cb31.json",
+					"jsonFile" : "target-glad-Debug-c98ee6121ab03cfa809d.json",
 					"name" : "glad",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "glfw::@ca12bac854c2ac6b2230",
-					"jsonFile" : "target-glfw-Debug-2e865ddc93dd1affd6c9.json",
+					"jsonFile" : "target-glfw-Debug-4a401843f93e9b5a7a37.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "imgui::@408438dda4a3eccc02b1",
-					"jsonFile" : "target-imgui-Debug-2154374c833fb2dba3b3.json",
+					"jsonFile" : "target-imgui-Debug-0fc68d8e1a2618b279e4.json",
 					"name" : "imgui",
 					"projectIndex" : 4
 				},
@@ -328,14 +328,14 @@
 				{
 					"directoryIndex" : 8,
 					"id" : "tinygltf::@008c538ffcdc266c3524",
-					"jsonFile" : "target-tinygltf-Debug-59b47de62a67bfb455aa.json",
+					"jsonFile" : "target-tinygltf-Debug-656b9ad9ed2504cd8ca1.json",
 					"name" : "tinygltf",
 					"projectIndex" : 6
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "tinyobjloader::@1d01870daa05c476c342",
-					"jsonFile" : "target-tinyobjloader-Debug-d1d437ba2c7f7274eee0.json",
+					"jsonFile" : "target-tinyobjloader-Debug-c6310109b60d589e2bc9.json",
 					"name" : "tinyobjloader",
 					"projectIndex" : 7
 				},
@@ -359,8 +359,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/CG-final/out/build/x64-Debug",
-		"source" : "D:/CG-final"
+		"build" : "D:/code/CG-final/out/build/x64-Debug",
+		"source" : "D:/code/CG-final"
 	},
 	"version" : 
 	{

@@ -141,15 +141,15 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "D:/CG-final/external/glfw/include"
+					"path" : "D:/code/CG-final/external/glfw/include"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "D:/CG-final/external/glfw/src"
+					"path" : "D:/code/CG-final/external/glfw/src"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "D:/CG-final/out/build/x64-Debug/external/glfw/src"
+					"path" : "D:/code/CG-final/out/build/x64-Debug/external/glfw/src"
 				}
 			],
 			"language" : "C",
@@ -203,7 +203,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "D:/CG-final/out/install/x64-Debug"
+			"path" : "D:/code/CG-final/out/install/x64-Debug"
 		}
 	},
 	"name" : "glfw",
