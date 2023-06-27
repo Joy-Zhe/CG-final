@@ -112,7 +112,8 @@ Drawing::Drawing(const Options& options) :
     ball(texture_ball),
     pris(texture_pris),
     pyramid(texture_pyramid),
-    cylinder(texture_cylinder)
+    cylinder(texture_cylinder),
+    screenshot(_windowWidth, _windowHeight)
 {
 
     // init model
@@ -257,6 +258,13 @@ void Drawing::handleInput() {
         std::cout << "D" << std::endl;
         camera->transform.position.x += cameraMoveSpeed * 0.02;
 
+    }
+
+    //½ØÍ¼
+    if (_input.keyboard.keyStates[GLFW_KEY_P] != GLFW_RELEASE) {
+        std::cout << "P" << std::endl;
+        screenshot.capture();
+        screenshot.save("screenshot.png");
     }
 
     //±ä½¹

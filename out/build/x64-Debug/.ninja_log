@@ -95,3 +95,12 @@
 581	762	7095784623218005	bin/final_project.exe	a56f1293046690cf
 10	494	7095786098335120	CMakeFiles/final_project.dir/src/drawing.cpp.obj	669a3e82485eae48
 495	671	7095786099261142	bin/final_project.exe	a56f1293046690cf
+4	751	7095821414507010	CMakeFiles/final_project.dir/src/screenShot.cpp.obj	517308c2fbe6e4b
+5	255	7095826696438481	CMakeFiles/final_project.dir/src/screenShot.cpp.obj	517308c2fbe6e4b
+255	444	7095826697444316	bin/final_project.exe	a56f1293046690cf
+10	349	7095831451428229	CMakeFiles/final_project.dir/src/screenShot.cpp.obj	517308c2fbe6e4b
+350	500	7095831452265497	bin/final_project.exe	a56f1293046690cf
+7	800	7095835506312337	CMakeFiles/final_project.dir/src/main.cpp.obj	f18b494d2e9129ca
+9	810	7095835506377446	CMakeFiles/final_project.dir/src/model.cpp.obj	bcc0dd9d83601cb0
+4	811	7095835506405845	CMakeFiles/final_project.dir/src/drawing.cpp.obj	669a3e82485eae48
+811	1010	7095835507491481	bin/final_project.exe	a56f1293046690cf

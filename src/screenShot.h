@@ -4,10 +4,8 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <glad/gl.h>
 #include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <imgui.h>
 #include <stb_image_write.h>
 
 class Screenshot {

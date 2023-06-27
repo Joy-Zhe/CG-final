@@ -16,6 +16,7 @@
 #include"prismatic.h"
 #include"pyramid.h"
 #include"cylinder.h"
+#include "screenShot.h"
 
 
 class Drawing : public Application {
@@ -60,6 +61,7 @@ private:
 
     enum RenderMode mario_renderMode = RenderMode::Simple;
     enum RenderMode castle_renderMode = RenderMode::Simple;
+    Screenshot screenshot;
 
     void settransform();
     void setscale();
