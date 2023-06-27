@@ -18,13 +18,20 @@ struct vertex_tri {
     glm::vec2 texCoord;
 };
 
+struct Material {
+    glm::vec3 ka;
+    glm::vec3 kd;
+    glm::vec3 ks;
+    float ns;
+};
+
 class Cube {
 public:
     Cube(std::string texture_path);
 
     ~Cube();
 
-    void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light);
+    void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light, glm::vec3 position, std::shared_ptr<AmbientLight> _ambientLight, std::shared_ptr<SpotLight> _spotLight, std::shared_ptr<Material> _material);
 
     Transform transform;
 private:

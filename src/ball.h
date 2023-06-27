@@ -17,7 +17,7 @@ public:
 
     ~Ball();
 
-    void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light);
+    void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light,glm::vec3 position, std::shared_ptr<AmbientLight> _ambientLight, std::shared_ptr<SpotLight> _spotLight, std::shared_ptr<Material> _material);
 
     float radius = 1.0f; // ÇòÌå°ë¾¶
     Transform transform;
@@ -40,6 +40,7 @@ private:
 
     std::unique_ptr<GLSLProgram> _shader;
     GLuint _textureID;
+    GLuint shadowMapTextureID = 1;
     std::unique_ptr<SimpleMaterial> simpleMaterial;
 
     void setdata();

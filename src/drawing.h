@@ -26,7 +26,11 @@ public:
 
 private:
     
+    float offset_x = 0.0f, offset_y = 0.0f;
+
     std::shared_ptr<DirectionalLight> _light;
+    std::shared_ptr<AmbientLight> _ambientLight;
+    std::shared_ptr<SpotLight> _spotLight;
 
     std::unique_ptr<SkyBox> _skybox;
 
@@ -47,6 +51,7 @@ private:
     Cylinder cylinder;
 
     std::vector<std::unique_ptr<Camera>> _cameras;
+    std::shared_ptr<Material> _material;
     int activeCameraIndex = 0;
 
     float scaleFactor = 1.0;

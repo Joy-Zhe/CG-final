@@ -25,7 +25,6 @@ const std::string texture_pris = "texture/miscellaneous/green2.jpg";
 const std::string texture_pyramid = "texture/miscellaneous/lightblue1.jpg";
 const std::string texture_cylinder = "texture/miscellaneous/red2.jpg";
 
-
 //bk ft exchange
 const std::vector<std::string> skyboxTextureRelPaths = {
     "texture/skybox/right.jpg", "texture/skybox/left.jpg",  "texture/skybox/top.jpg",
@@ -144,9 +143,25 @@ Drawing::Drawing(const Options& options) :
 
     // init light
     _light.reset(new DirectionalLight());
+    _light->intensity = 0.5f;
+    _light->transform.position = glm::vec3(0.0f, 1.0f, -10.0f);
     _light->transform.rotation =
-        glm::angleAxis(glm::radians(45.0f), glm::normalize(glm::vec3(-1.0f, -2.0f, -1.0f)));
+        glm::angleAxis(glm::radians(45.0f), glm::normalize(glm::vec3(-1.0f)));
 
+    _ambientLight.reset(new AmbientLight);
+
+    _spotLight.reset(new SpotLight);
+    _spotLight->intensity = 0.5f;
+    _spotLight->angle = glm::radians(90.0f);
+    _spotLight->transform.position = glm::vec3(20.0f, 0.0f, -60.0f);
+    _spotLight->transform.rotation = glm::vec3(0.0f, 0.0f, 0.0f);
+
+    //init material
+    _material.reset(new Material);
+    _material->ka = glm::vec3(0.03f, 0.03f, 0.03f);
+    _material->kd = glm::vec3(1.0f, 1.0f, 1.0f);
+    _material->ks = glm::vec3(1.0f, 1.0f, 1.0f);
+    _material->ns = 10.0f;
 
     // init imGUI
     IMGUI_CHECKVERSION();
@@ -343,6 +358,42 @@ void Drawing::handleInput() {
     {
         rotateCameraAroundObject(*camera, objectPosition, 0.1f, getDeltaTime());
     }
+
+    //glm::vec3(0.0f, 1.0f, 0.0f))
+    constexpr float directLightMoveSpeed = 0.02f;
+    _light->transform.rotation = glm::normalize(
+        glm::angleAxis(
+            glm::radians(-offset_x * directLightMoveSpeed), 
+            _light->transform.getUp())
+        * /*_directionalLight->transform.rotation*/ glm::angleAxis(
+            glm::radians(45.0f), glm::normalize(glm::vec3(-1.0f))));
+    _light->transform.rotation = glm::normalize(
+        glm::angleAxis(
+            glm::radians(-offset_y * directLightMoveSpeed),
+            _light->transform.getRight())
+        * /*_directionalLight->transform.rotation*/ glm::angleAxis(
+            glm::radians(45.0f), glm::normalize(glm::vec3(-1.0f))));
+
+    constexpr float spotLightMoveSpeed = 5.0f;
+    if (_input.keyboard.keyStates[GLFW_KEY_U] != GLFW_RELEASE) {
+        _spotLight->transform.position +=
+            _spotLight->transform.getFront() * spotLightMoveSpeed * _deltaTime;
+    }
+
+    if (_input.keyboard.keyStates[GLFW_KEY_H] != GLFW_RELEASE) {
+        _spotLight->transform.position -=
+            _spotLight->transform.getRight() * spotLightMoveSpeed * _deltaTime;
+    }
+
+    if (_input.keyboard.keyStates[GLFW_KEY_J] != GLFW_RELEASE) {
+        _spotLight->transform.position -=
+            _spotLight->transform.getFront() * spotLightMoveSpeed * _deltaTime;
+    }
+
+    if (_input.keyboard.keyStates[GLFW_KEY_K] != GLFW_RELEASE) {
+        _spotLight->transform.position +=
+            _spotLight->transform.getRight() * spotLightMoveSpeed * _deltaTime;
+    }
 }
 
 void Drawing::renderFrame(){
@@ -388,25 +439,25 @@ void Drawing::renderFrame(){
         break;
     }
 
-    mario.draw(projection, view,_light);
-    castle.draw(projection, view, _light);
+    mario.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    castle.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
     // draw skybox
     _skybox->draw(projection, view);
 
-    cube.draw(projection,view,_light);
-    cube1.draw(projection, view, _light);
-    cube2.draw(projection, view, _light);
+    cube.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    cube1.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    cube2.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
-    ball.draw(projection, view, _light);
-    pris.draw(projection, view, _light);
-    pyramid.draw(projection, view, _light);
+    ball.draw(projection, view, _light,(_cameras[activeCameraIndex])->transform.position,_ambientLight,_spotLight,_material);
+    pris.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    pyramid.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
-    land.draw(projection, view, _light);
+    land.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
     glm::quat rotationDelta = glm::angleAxis(angle_cy, glm::vec3(1.0, 0, 0.0));
     cylinder.transform.rotation = glm::quat{ 1.0f, 0.0f, 0.0f, 0.0f } * rotationDelta;
-    cylinder.draw(projection, view, _light);
+    cylinder.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
     // draw ui elements
     ImGui_ImplOpenGL3_NewFrame();
@@ -445,8 +496,24 @@ void Drawing::renderFrame(){
 
         ImGui::Text("Directional light");
         ImGui::Separator();
-        ImGui::SliderFloat("intensity", &_light->intensity, 0.0f, 2.0f);
-        ImGui::ColorEdit3("color", (float*)&_light->color);
+        ImGui::SliderFloat("intensity_1", &_light->intensity, 0.0f, 3.0f);
+        ImGui::ColorEdit3("color_1", (float*)&_light->color);
+        ImGui::SliderFloat("offset_x", &offset_x, 0.0f, 3600.0f);
+        ImGui::SliderFloat("offset_y", &offset_y, 0.0f, 3600.0f);
+        ImGui::NewLine();
+
+        ImGui::Text("ambient light");
+        ImGui::Separator();
+        ImGui::SliderFloat("intensity_2", &_ambientLight->intensity, 0.0f, 20.0f);
+        ImGui::ColorEdit3("color_2", (float*)&_ambientLight->color);
+        ImGui::NewLine();
+
+        ImGui::Text("spot light");
+        ImGui::Separator();
+        ImGui::SliderFloat("intensity_3", &_spotLight->intensity, 0.0f, 10.0f);
+        ImGui::ColorEdit3("color_3", (float*)&_spotLight->color);
+        ImGui::SliderFloat(
+            "angle", (float*)&_spotLight->angle, 0.0f, glm::radians(180.0f), "%f rad");
         ImGui::NewLine();
 
         ImGui::SliderFloat("length of cube", &cube.transform.scale.x, 10.0f, 20.0f);
