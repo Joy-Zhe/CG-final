@@ -33,7 +33,7 @@ Model::Model(std::string newmodelRelPath, std::string wall2, std::string wall1){
 
 }
 
-void Model::setModel(const std::string newmodelRelPath[6], std::string wall2, std::string wall1, int i)
+void Model::setModel(const std::string newmodelRelPath[20], std::string wall2, std::string wall1, int i)
 {
     // init textures
     std::string _assetRootDir = "../media/";

@@ -33,7 +33,7 @@ public:
 
     Model(std::string newmodelRelPath, std::string wall2, std::string wall1);
 
-    void setModel(const std::string newmodelRelPath[6], std::string wall2, std::string wall1, int i);
+    void setModel(const std::string newmodelRelPath[20], std::string wall2, std::string wall1, int i);
 
     //Model(const std::string newmodelRelPath[6], std::string wall2, std::string wall1);
 

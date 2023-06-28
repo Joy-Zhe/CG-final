@@ -7,7 +7,7 @@
 #include "drawing.h"
 
 //½Ó¿Ú
-const std::string mario_modelRelPath[6] = {"obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj", "obj/mario (2).obj" };
+const std::string mario_modelRelPath[20] = {"obj/1.obj", "obj/2.obj", "obj/3.obj", "obj/4.obj", "obj/5.obj", "obj/6.obj", "obj/7.obj", "obj/8.obj", "obj/9.obj", "obj/10.obj", "obj/11.obj", "obj/12.obj", "obj/13.obj", "obj/14.obj", "obj/15.obj", "obj/16.obj", "obj/17.obj", "obj/18.obj", "obj/19.obj", "obj/20.obj" /*,"obj/21.obj", "obj/22.obj", "obj/23.obj", "obj/24.obj", "obj/25.obj", "obj/26.obj", "obj/27.obj", "obj/28.obj", "obj/29.obj" , "obj/30.obj", "obj/31.obj"*/ };
 const std::string mario_2 = "texture/miscellaneous/Frame 34.jpg";
 const std::string mario_1= "texture/miscellaneous/F.jpg";
 
@@ -428,7 +428,7 @@ void Drawing::renderFrame(){
 
     const glm::mat4 view = _cameras[activeCameraIndex]->getViewMatrix();
     int i;
-    i = ((int)(glfwGetTime() * 10.0f)) / 10 % 6;
+    i = ((int)(glfwGetTime())) % 20 + 1;
     mario.setModel(mario_modelRelPath, mario_2, mario_1, i);
    
     switch (mario_renderMode) {
