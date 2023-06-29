@@ -19,7 +19,7 @@ public:
 
     void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light, glm::vec3 position, std::shared_ptr<AmbientLight> _ambientLight, std::shared_ptr<SpotLight> _spotLight, std::shared_ptr<Material> _material);
 
-    float radius = 1.0f; // ÇòÌå°ë¾¶
+    float radius = 4.0f; // ÇòÌå°ë¾¶
     Transform transform;
 
 private:
@@ -33,7 +33,7 @@ private:
     unsigned int indices[18];
     vertex_tri vertices[7];
 
-    float height = 8.0;
+    float height = 4.0;
 
     std::unique_ptr<GLSLProgram> _shader;
     GLuint _textureID;

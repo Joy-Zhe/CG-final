@@ -3,14 +3,19 @@
 #include <iostream>
 
 
-Cube::Cube(std::string texture_path){
+Cube::Cube(std::string texture_path, std::string texture_path1){
 
     // init textures
     std::string _assetRootDir = "../media/";
     std::shared_ptr<Texture2D> texture =std::make_shared<ImageTexture2D>(_assetRootDir + texture_path);
+    std::shared_ptr<Texture2D> texture1 = std::make_shared<ImageTexture2D>(_assetRootDir + texture_path1);
 
-    simpleMaterial.reset(new SimpleMaterial);
-    simpleMaterial->mapKd = texture;
+    simpleMaterial.reset(new BlendMaterial);
+    simpleMaterial->mapKds[0]= texture;
+    simpleMaterial->mapKds[1]= texture1;
+    simpleMaterial->kds[0] = glm::vec3(1.0f, 1.0f, 1.0f);
+    simpleMaterial->kds[1] = glm::vec3(1.0f, 1.0f, 1.0f);
+    simpleMaterial->blend = 0.0f;
 
     // create a vertex array object
     glGenVertexArrays(1, &_vao);
@@ -42,6 +47,7 @@ Cube::Cube(std::string texture_path){
 
     //load texture
     glGenTextures(1, &_textureID);
+    glGenTextures(1, &_textureID1);
     //glBindTexture(GL_TEXTURE_2D, _textureID);
 
     int width, height, nrChannels;
@@ -131,10 +137,13 @@ Cube::Cube(std::string texture_path){
         "uniform AmbientLight ambientLight;\n"
         "uniform DirectionalLight light;\n"
         "uniform SpotLight spotLight;\n"
+        "uniform sampler2D texture0;\n"
         "uniform sampler2D texture1;\n"
         "uniform vec3 viewPos;\n"
         "uniform Material material;\n"
-
+        "uniform vec3 kd1;\n"
+        "uniform vec3 kd2;\n"
+        "uniform float blend;\n"
 
         "out vec4 outColor;\n"
 
@@ -169,7 +178,9 @@ Cube::Cube(std::string texture_path){
 
         "void main() {\n"
 
-        "vec4 Color=texture(texture1, TexCoord);"
+        "vec4 Color1=texture(texture0, TexCoord) * vec4(kd1, 1.0);"
+        "vec4 Color2=texture(texture1, TexCoord) * vec4(kd2, 1.0);"
+        "vec4 Color=mix(Color1,Color2,blend);"
 
         // 计算反射光照强度
         "   vec3 N = normalize(fNormal);"
@@ -217,9 +228,15 @@ void Cube::draw(const glm::mat4& projection, const glm::mat4& view, std::shared_
     glBindTexture(GL_TEXTURE_2D, _textureID);
 
     // 设置纹理采样器的uniform值
-    _shader->setUniformInt("texture1", 1); 
+    _shader->setUniformInt("texture0", 1); 
     // enable textures and transform textures to gpu
-    simpleMaterial->mapKd->bind(1);
+    simpleMaterial->mapKds[0]->bind(1);
+    _shader->setUniformVec3("kd1", simpleMaterial->kds[0]);
+    _shader->setUniformInt("texture1", 2);
+    // enable textures and transform textures to gpu
+    simpleMaterial->mapKds[1]->bind(2);
+    _shader->setUniformVec3("kd2", simpleMaterial->kds[1]);
+    _shader->setUniformFloat("blend", simpleMaterial->blend);
     _shader->setUniformMat4("projection", projection);
     _shader->setUniformMat4("view", view);
     _shader->setUniformMat4("transform", transform.getLocalMatrix());

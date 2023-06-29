@@ -33,10 +33,6 @@ newmodel::newmodel(const std::string& filepath)
     std::vector<glm::vec3> normals;
     std::vector<glm::vec2> texCoords;
 
-    if (!file.is_open()) {
-        std::cerr << "Error: Failed to open file: " << filepath << std::endl;
-        return;
-    }
 
     std::string line;
     while (std::getline(file, line)) {

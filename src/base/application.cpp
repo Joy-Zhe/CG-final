@@ -49,14 +49,11 @@ Application::Application(const Options& options)
         throw std::runtime_error("glad initialization OpenGL failure");
     }
 
-
     std::cout << "OpenGL\n";
     std::cout << "+ version:    " << glGetString(GL_VERSION) << '\n';
     std::cout << "+ renderer:   " << glGetString(GL_RENDERER) << '\n';
     std::cout << "+ glsl:       " << glGetString(GL_SHADING_LANGUAGE_VERSION) << '\n';
     std::cout << std::endl;
-
-
 
     // framebuffer and viewport
     glfwGetFramebufferSize(_window, &_windowWidth, &_windowHeight);

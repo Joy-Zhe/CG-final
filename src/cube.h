@@ -8,8 +8,15 @@
 #include"base/transform.h"
 #include"base/light.h"
 
+
 struct SimpleMaterial {
     std::shared_ptr<Texture2D> mapKd;
+};
+
+struct BlendMaterial {
+    glm::vec3 kds[2];
+    std::shared_ptr<Texture2D> mapKds[2];
+    float blend;
 };
 
 struct vertex_tri {
@@ -27,13 +34,15 @@ struct Material {
 
 class Cube {
 public:
-    Cube(std::string texture_path);
+    Cube(std::string texture_path, std::string texture_path1);
 
     ~Cube();
 
     void draw(const glm::mat4& projection, const glm::mat4& view, std::shared_ptr<DirectionalLight> _light, glm::vec3 position, std::shared_ptr<AmbientLight> _ambientLight, std::shared_ptr<SpotLight> _spotLight, std::shared_ptr<Material> _material);
 
     Transform transform;
+    std::unique_ptr<BlendMaterial> simpleMaterial;
+
 private:
     GLuint _vao = 0;
 
@@ -81,7 +90,8 @@ private:
 
     std::unique_ptr<GLSLProgram> _shader;
     GLuint _textureID;
+    GLuint _textureID1;
 
-    std::unique_ptr<SimpleMaterial> simpleMaterial;
+  
 
 };

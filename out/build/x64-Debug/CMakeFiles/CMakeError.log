@@ -1,10 +1,10 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: D:/code/CG-final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gpnqwc
+Change Dir: D:/final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9ze8p0
 
-Run Build Command(s):D:\CODE\IDE\VS\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_524cd && [1/2] Building C object CMakeFiles\cmTC_524cd.dir\src.c.obj
-FAILED: CMakeFiles/cmTC_524cd.dir/src.c.obj 
-D:\code\IDE\VS\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_524cd.dir\src.c.obj /FdCMakeFiles\cmTC_524cd.dir\ /FS -c D:\code\CG-final\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-gpnqwc\src.c
-D:\code\CG-final\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-gpnqwc\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_b5427 && [1/2] Building C object CMakeFiles\cmTC_b5427.dir\src.c.obj
+FAILED: CMakeFiles/cmTC_b5427.dir/src.c.obj 
+"C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\cl.exe"  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_b5427.dir\src.c.obj /FdCMakeFiles\cmTC_b5427.dir\ /FS -c D:\final\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-9ze8p0\src.c
+D:\final\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-9ze8p0\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
 ninja: build stopped: subcommand failed.
 
 
@@ -31,26 +31,26 @@ int main(void)
 
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: D:/code/CG-final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r8t9cp
+Change Dir: D:/final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-tzig2c
 
-Run Build Command(s):D:\CODE\IDE\VS\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_bbfcf && [1/2] Building C object CMakeFiles\cmTC_bbfcf.dir\CheckFunctionExists.c.obj
-[2/2] Linking C executable cmTC_bbfcf.exe
-FAILED: cmTC_bbfcf.exe 
-cmd.exe /C "cd . && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_bbfcf.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests  -- D:\code\IDE\VS\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_bbfcf.dir\CheckFunctionExists.c.obj  /out:cmTC_bbfcf.exe /implib:cmTC_bbfcf.lib /pdb:cmTC_bbfcf.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-LINK Pass 1: command "D:\code\IDE\VS\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_bbfcf.dir\CheckFunctionExists.c.obj /out:cmTC_bbfcf.exe /implib:cmTC_bbfcf.lib /pdb:cmTC_bbfcf.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_bbfcf.dir/intermediate.manifest CMakeFiles\cmTC_bbfcf.dir/manifest.res" failed (exit code 1104) with the following output:
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_58f85 && [1/2] Building C object CMakeFiles\cmTC_58f85.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_58f85.exe
+FAILED: cmTC_58f85.exe 
+cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_58f85.dir --rc="D:\Windows Kits\10\bin\10.0.22000.0\x64\rc.exe" --mt="D:\Windows Kits\10\bin\10.0.22000.0\x64\mt.exe" --manifests  -- "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_58f85.dir\CheckFunctionExists.c.obj  /out:cmTC_58f85.exe /implib:cmTC_58f85.lib /pdb:cmTC_58f85.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_58f85.dir\CheckFunctionExists.c.obj /out:cmTC_58f85.exe /implib:cmTC_58f85.lib /pdb:cmTC_58f85.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_58f85.dir/intermediate.manifest CMakeFiles\cmTC_58f85.dir/manifest.res" failed (exit code 1104) with the following output:
 LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
 ninja: build stopped: subcommand failed.
 
 
 
 Determining if the function pthread_create exists in the pthread failed with the following output:
-Change Dir: D:/code/CG-final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-okfvja
+Change Dir: D:/final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kkebf8
 
-Run Build Command(s):D:\CODE\IDE\VS\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_e1d9c && [1/2] Building C object CMakeFiles\cmTC_e1d9c.dir\CheckFunctionExists.c.obj
-[2/2] Linking C executable cmTC_e1d9c.exe
-FAILED: cmTC_e1d9c.exe 
-cmd.exe /C "cd . && D:\code\IDE\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_e1d9c.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests  -- D:\code\IDE\VS\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_e1d9c.dir\CheckFunctionExists.c.obj  /out:cmTC_e1d9c.exe /implib:cmTC_e1d9c.lib /pdb:cmTC_e1d9c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-LINK Pass 1: command "D:\code\IDE\VS\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_e1d9c.dir\CheckFunctionExists.c.obj /out:cmTC_e1d9c.exe /implib:cmTC_e1d9c.lib /pdb:cmTC_e1d9c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_e1d9c.dir/intermediate.manifest CMakeFiles\cmTC_e1d9c.dir/manifest.res" failed (exit code 1104) with the following output:
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_754ce && [1/2] Building C object CMakeFiles\cmTC_754ce.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_754ce.exe
+FAILED: cmTC_754ce.exe 
+cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_754ce.dir --rc="D:\Windows Kits\10\bin\10.0.22000.0\x64\rc.exe" --mt="D:\Windows Kits\10\bin\10.0.22000.0\x64\mt.exe" --manifests  -- "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_754ce.dir\CheckFunctionExists.c.obj  /out:cmTC_754ce.exe /implib:cmTC_754ce.lib /pdb:cmTC_754ce.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_754ce.dir\CheckFunctionExists.c.obj /out:cmTC_754ce.exe /implib:cmTC_754ce.lib /pdb:cmTC_754ce.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_754ce.dir/intermediate.manifest CMakeFiles\cmTC_754ce.dir/manifest.res" failed (exit code 1104) with the following output:
 LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
 ninja: build stopped: subcommand failed.
 

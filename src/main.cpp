@@ -4,7 +4,7 @@
 
 Options getOptions(int argc, char* argv[]) {
     Options options;
-    options.windowTitle = "Mario's World";
+    options.windowTitle = "Texture Mapping";
     options.windowWidth = 1280;
     options.windowHeight = 720;
     options.windowResizable = false;

@@ -1,8 +1,8 @@
-# Install script for directory: D:/code/CG-final
+# Install script for directory: D:/final
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "D:/code/CG-final/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "D:/final/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,37 +34,37 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/code/CG-final/out/build/x64-Debug/external/glm/cmake_install.cmake")
+  include("D:/final/out/build/x64-Debug/external/glm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/code/CG-final/out/build/x64-Debug/external/glfw/cmake_install.cmake")
+  include("D:/final/out/build/x64-Debug/external/glfw/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/code/CG-final/out/build/x64-Debug/external/glad/cmake_install.cmake")
+  include("D:/final/out/build/x64-Debug/external/glad/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/code/CG-final/out/build/x64-Debug/external/imgui/cmake_install.cmake")
+  include("D:/final/out/build/x64-Debug/external/imgui/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/code/CG-final/out/build/x64-Debug/external/stb/cmake_install.cmake")
+  include("D:/final/out/build/x64-Debug/external/stb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/code/CG-final/out/build/x64-Debug/external/tinygltf/cmake_install.cmake")
+  include("D:/final/out/build/x64-Debug/external/tinygltf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/code/CG-final/out/build/x64-Debug/external/tinyobjloader/cmake_install.cmake")
+  include("D:/final/out/build/x64-Debug/external/tinyobjloader/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -75,5 +75,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/code/CG-final/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/final/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

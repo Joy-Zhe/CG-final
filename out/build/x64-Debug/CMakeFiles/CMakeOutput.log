@@ -1,6 +1,6 @@
 The system is: Windows - 10.0.22621 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: D:/code/IDE/VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
 Build flags: 
 Id flags:  
 
@@ -21,10 +21,10 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "D:/code/CG-final/out/build/x64-Debug/CMakeFiles/3.25.1-msvc1/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "D:/final/out/build/x64-Debug/CMakeFiles/3.25.1-msvc1/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: D:/code/IDE/VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
 Build flags: 
 Id flags:  
 
@@ -45,21 +45,21 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "D:/code/CG-final/out/build/x64-Debug/CMakeFiles/3.25.1-msvc1/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "D:/final/out/build/x64-Debug/CMakeFiles/3.25.1-msvc1/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: D:/code/CG-final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kreaa9
+Change Dir: D:/final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i4fx1a
 
-Run Build Command(s):D:\CODE\IDE\VS\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_979e0 && [1/2] Building C object CMakeFiles\cmTC_979e0.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_979e0.exe
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_13a48 && [1/2] Building C object CMakeFiles\cmTC_13a48.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_13a48.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: D:/code/CG-final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f5kuny
+Change Dir: D:/final/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-cd90cd
 
-Run Build Command(s):D:\CODE\IDE\VS\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_86a30 && [1/2] Building CXX object CMakeFiles\cmTC_86a30.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_86a30.exe
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_5ab71 && [1/2] Building CXX object CMakeFiles\cmTC_5ab71.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_5ab71.exe
 
 
 

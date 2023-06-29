@@ -7,23 +7,23 @@
 #include "drawing.h"
 
 //接口
-const std::string mario_modelRelPath[20] = {"obj/1.obj", "obj/2.obj", "obj/3.obj", "obj/4.obj", "obj/5.obj", "obj/6.obj", "obj/7.obj", "obj/8.obj", "obj/9.obj", "obj/10.obj", "obj/11.obj", "obj/12.obj", "obj/13.obj", "obj/14.obj", "obj/15.obj", "obj/16.obj", "obj/17.obj", "obj/18.obj", "obj/19.obj", "obj/20.obj" /*,"obj/21.obj", "obj/22.obj", "obj/23.obj", "obj/24.obj", "obj/25.obj", "obj/26.obj", "obj/27.obj", "obj/28.obj", "obj/29.obj" , "obj/30.obj", "obj/31.obj"*/ };
-const std::string mario_2 = "texture/miscellaneous/Frame 34.jpg";
-const std::string mario_1= "texture/miscellaneous/F.jpg";
+
+//const std::string mario_modelRelPath = "obj/mario (2).obj";
+const std::string mario_modelRelPath[24] = { "obj/1.obj", "obj/2.obj", "obj/3.obj", "obj/4.obj", "obj/5.obj", "obj/6.obj", "obj/7.obj", "obj/8.obj", "obj/9.obj", "obj/10.obj", "obj/11.obj", "obj/12.obj", "obj/13.obj", "obj/14.obj", "obj/15.obj", "obj/16.obj", "obj/17.obj", "obj/18.obj", "obj/19.obj", "obj/20.obj", "obj/21.obj", "obj/22.obj", "obj/23.obj", "obj/24.obj" };
+const std::string mario_2 = "texture/miscellaneous/1.png";
+const std::string mario_1 = "texture/miscellaneous/F.jpg";
 
 const std::string castle_modelRelPath = "obj/castle.obj";
 const std::string castle_1 = "texture/miscellaneous/C.jpg";
 const std::string castle_2 = "texture/miscellaneous/E.jpg";
 
 
-const std::string texture_path = "texture/miscellaneous/green1.jpg";
-const std::string texture_path1 = "texture/miscellaneous/lightblue1.jpg";
-const std::string texture_path2 = "texture/miscellaneous/blue1.jpg";
+const std::string texture_path = "texture/miscellaneous/cube.jpg";
 const std::string texture_land = "texture/miscellaneous/B.jpg";
-const std::string texture_ball = "texture/miscellaneous/blue2.jpg";
-const std::string texture_pris = "texture/miscellaneous/green2.jpg";
-const std::string texture_pyramid = "texture/miscellaneous/lightblue1.jpg";
-const std::string texture_cylinder = "texture/miscellaneous/red2.jpg";
+const std::string texture_ball = "texture/miscellaneous/green1.jpg";
+const std::string texture_pris = "texture/miscellaneous/gold.jpg";
+const std::string texture_pyramid = "texture/miscellaneous/green2.jpg";
+//const std::string texture_cylinder = "texture/miscellaneous/green1.jpg";
 
 //bk ft exchange
 const std::vector<std::string> skyboxTextureRelPaths = {
@@ -33,69 +33,123 @@ const std::vector<std::string> skyboxTextureRelPaths = {
 void Drawing::settransform()
 {
 
-    mario.model->transform.scale = glm::vec3(0.08f, 0.08f, 0.08f);
-    mario.model->transform.position = glm::vec3(3.0f, -10.0f, -20.0f);
-    mario.model->transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+    mushroom->model->transform.scale = glm::vec3(1.f, 1.0f, 1.0f);
+    mushroom->model->transform.position = glm::vec3(20.0f, -5.0f, -20.0f);
+    mushroom->model->transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
     castle.model->transform.scale = glm::vec3(1.0f, 1.0f, 1.0f);
-    castle.model->transform.position = glm::vec3(50.0f, -10.0f, -100.0f);
+    castle.model->transform.position = glm::vec3(80.0f, -10.0f, -90.0f);
     castle.model->transform.rotation = { 1.0f, 0.0f, -0.2f, 0.0f };
 
-    cube.transform.scale = glm::vec3(1.0f, 1.0f, 1.0f);
-    cube.transform.position = glm::vec3(-50.0f, -10.0f, -100.0f);
+    //the cubes
+    cube.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
+    cube.transform.position = glm::vec3(-10.0f, 0.0f, -30.0f);
     cube.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
+
     cube1.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
-    cube1.transform.position = glm::vec3(-30.0f, -10.0f, -100.0f);
+    cube1.transform.position = glm::vec3(-10.0f, -10.0f, -30.0f);
     cube1.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
     cube2.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
-    cube2.transform.position = glm::vec3(-10.0f, -10.0f, -100.0f);
+    cube2.transform.position = glm::vec3(-10.0f, -5.0f, -30.0f);
     cube2.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
+
+    cube3.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
+    cube3.transform.position = glm::vec3(-30.0f, 0.0f, -30.0f);
+    cube3.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    cube4.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
+    cube4.transform.position = glm::vec3(-25.0f, 0.0f, -30.0f);
+    cube4.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    cube5.transform.scale = glm::vec3(5.0f, 5.0f, 5.0f);
+    cube5.transform.position = glm::vec3(-20.0f, 0.0f, -30.0f);
+    cube5.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    //the mountains
     ball.transform.scale = glm::vec3(5.0, 5.0, 5.0);
-    ball.transform.position = glm::vec3(20.0f, 0.0f, -70.0f);
+    ball.transform.position = glm::vec3(30.0f, 10.0f, -80.0f);
     ball.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
-
-    pris.transform.scale = glm::vec3(5.0, 5.0, 5.0);
-    pris.transform.position = glm::vec3(0.0f, 0.0f, -80.0f);
-    pris.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
-
-    pyramid.transform.scale = glm::vec3(5.0, 5.0, 5.0);
-    pyramid.transform.position = glm::vec3(-10.0f, -10.0f, -80.0f);
-    pyramid.transform.rotation = { 1.0f, -0.6f, 0.0f, 0.0f };
-
     cylinder.transform.scale = glm::vec3(5.0, 5.0, 5.0);
-    cylinder.transform.position = glm::vec3(20.0f, -10.0f, -60.0f);
+    cylinder.transform.position = glm::vec3(30.0f, -10.0f, -80.0f);
     cylinder.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
 
+    ball1.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    ball1.transform.position = glm::vec3(10.0f, 10.0f, -80.0f);
+    ball1.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+    cylinder1.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    cylinder1.transform.position = glm::vec3(10.0f, -10.0f, -80.0f);
+    cylinder1.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    ball2.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    ball2.transform.position = glm::vec3(-10.0f, 10.0f, -80.0f);
+    ball2.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+    cylinder2.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    cylinder2.transform.position = glm::vec3(-10.0f, -10.0f, -80.0f);
+    cylinder2.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    //gold
+    pris.transform.scale = glm::vec3(3.0, 3.0, 3.0);
+    pris.transform.position = glm::vec3(-30.0f, 8.0f, -30.0f);
+    pris.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+    pris1.transform.scale = glm::vec3(3.0, 3.0, 3.0);
+    pris1.transform.position = glm::vec3(-20.0f, 8.0f, -30.0f);
+    pris1.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
+
+
+    //the small mountains
+    pyramid.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    pyramid.transform.position = glm::vec3(20.0f, -10.0f, -70.0f);
+    pyramid.transform.rotation = { 1.0f, -0.6f, 0.0f, 0.0f };
+
+    pyramid1.transform.scale = glm::vec3(5.0, 5.0, 5.0);
+    pyramid1.transform.position = glm::vec3(0.0f, -10.0f, -70.0f);
+    pyramid1.transform.rotation = { 1.0f, -0.6f, 0.0f, 0.0f };
+
+
     land.transform.scale = glm::vec3(150.0f, 100.0f, 100.0f);
-    land.transform.position = glm::vec3(-50.0f, -110.0f, -10.0f);
+    land.transform.position = glm::vec3(-40.0f, -110.0f, -10.0f);
     land.transform.rotation = { 1.0f, 0.0f, 0.0f, 0.0f };
-   
+
 
     return;
 }
 
 void Drawing::setscale()
 {
-    mario.model->transform.scale *= scale;
-   
+    scale_mush *= scale;
+
     castle.model->transform.scale *= scale;
-   
+
     cube.transform.scale *= scale;
-   
+
     cube1.transform.scale *= scale;
- 
+
     cube2.transform.scale *= scale;
 
     ball.transform.scale *= scale;
 
+    ball1.transform.scale *= scale;
+
+    ball2.transform.scale *= scale;
+
     pris.transform.scale *= scale;
+
+    pris1.transform.scale *= scale;
 
     pyramid.transform.scale *= scale;
 
+    pyramid1.transform.scale *= scale;
+
     cylinder.transform.scale *= scale;
+
+    cylinder1.transform.scale *= scale;
+
+    cylinder2.transform.scale *= scale;
+
 
     return;
 }
@@ -103,19 +157,53 @@ void Drawing::setscale()
 
 Drawing::Drawing(const Options& options) : 
     Application(options),
-    cube(texture_path),
-    cube1(texture_path1),
-    cube2(texture_path2),
-    land(texture_land),
-    mario(mario_modelRelPath[0], mario_2, mario_1),
+    cube(texture_path, texture_land),
+    cube1(texture_path, texture_land),
+    cube2(texture_path, texture_land),
+    cube3(texture_path, texture_land),
+    cube4(texture_path, texture_land),
+    cube5(texture_path, texture_land),
+
+    land(texture_land, texture_path),
     castle(castle_modelRelPath, castle_2, castle_1),
     ball(texture_ball),
+    ball1(texture_ball),
+    ball2(texture_ball),
     pris(texture_pris),
-    pyramid(texture_pyramid),
-    cylinder(texture_cylinder),
-    screenshot(_windowWidth, _windowHeight)
+    pris1(texture_pris),
+    pyramid(texture_ball),
+    pyramid1(texture_ball),
+    cylinder(texture_ball),
+    cylinder1(texture_ball),
+    cylinder2(texture_ball),
+    screenshot(_windowWidth, _windowHeight),
+    mush{ Model(mario_modelRelPath[0],mario_2, mario_1),
+    Model(mario_modelRelPath[1],mario_2, mario_1),
+    Model(mario_modelRelPath[2],mario_2, mario_1),
+    Model(mario_modelRelPath[3],mario_2, mario_1),
+    Model(mario_modelRelPath[4],mario_2, mario_1),
+    Model(mario_modelRelPath[5],mario_2, mario_1),
+    Model(mario_modelRelPath[6],mario_2, mario_1),
+    Model(mario_modelRelPath[7],mario_2, mario_1),
+    Model(mario_modelRelPath[8],mario_2, mario_1),
+    Model(mario_modelRelPath[9],mario_2, mario_1),
+    Model(mario_modelRelPath[10],mario_2, mario_1),
+    Model(mario_modelRelPath[11],mario_2, mario_1),
+    Model(mario_modelRelPath[12],mario_2, mario_1),
+    Model(mario_modelRelPath[13],mario_2, mario_1),
+    Model(mario_modelRelPath[14],mario_2, mario_1),
+    Model(mario_modelRelPath[15],mario_2, mario_1),
+    Model(mario_modelRelPath[16],mario_2, mario_1),
+    Model(mario_modelRelPath[17],mario_2, mario_1),
+    Model(mario_modelRelPath[18],mario_2, mario_1),
+    Model(mario_modelRelPath[19],mario_2, mario_1),
+    Model(mario_modelRelPath[20],mario_2, mario_1),
+    Model(mario_modelRelPath[21],mario_2, mario_1),
+    Model(mario_modelRelPath[22],mario_2, mario_1),
+    Model(mario_modelRelPath[23],mario_2, mario_1),
+    }
 {
-
+    mushroom = mush;
     // init model
     settransform();
 
@@ -427,47 +515,76 @@ void Drawing::renderFrame(){
     projection[1][1] /= scaleFactor;
 
     const glm::mat4 view = _cameras[activeCameraIndex]->getViewMatrix();
-    int i;
-    i = ((int)(glfwGetTime())) % 20 + 1;
-    mario.setModel(mario_modelRelPath, mario_2, mario_1, i);
    
     switch (mario_renderMode) {
     case RenderMode::Simple:
-        mario.setRenderMode(RenderMode::Simple);
+       // int i;
+        //i = ((int)(glfwGetTime()*11)) % 24 ;
+        int i;
+        float speed = 2.0f; // 调整速度，可以增加或减少这个值
+        int numModels = 24; // 模型的总数
+        static int counter = 0; // 计数器变量，用于跟踪当前播放的模型序号
+
+        float currentTime = glfwGetTime() * speed;
+        i = counter % numModels;
+
+        // 检查是否需要更新当前播放的模型
+        if (currentTime >= (i + 1) * (1.0f / speed)) {
+            counter++;
+            i = counter % numModels;
+        }
+
+
+        mushroom= &mush[i];
+        mushroom->model->transform.scale =glm::vec3(1.0,1.0,1.0)* scale_mush;
+        mushroom->model->transform.position = glm::vec3(30.0f, -5.0f, -20.0f);
+        mushroom->model->transform.rotation = { 1.0f, 0.0f, 0.1f, 0.0f };
+        mushroom->setRenderMode(RenderMode::Simple);
         break;
-    case RenderMode::Blend:
-        mario.setRenderMode(RenderMode::Blend);
-		break;
     }
 
     switch (castle_renderMode) {
     case RenderMode::Simple:
         castle.setRenderMode(RenderMode::Simple);
         break;
-    case RenderMode::Blend:
-        castle.setRenderMode(RenderMode::Blend);
+    case RenderMode::Material:
+        castle.setRenderMode(RenderMode::Material);
         break;
+
     }
 
-    mario.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+
+    mushroom->draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
     castle.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
     // draw skybox
     _skybox->draw(projection, view);
 
+    glm::quat rotationDelta_x = glm::angleAxis(cubeangle_x, glm::vec3(1.0, 0.0, 0.0));
+    glm::quat rotationDelta_y = glm::angleAxis(cubeangle_y, glm::vec3(0.0, 1.0, 0.0));
+    glm::quat rotationDelta_z = glm::angleAxis(cubeangle_z, glm::vec3(0.0, 0.0, 1.0));
+    cube.transform.rotation = glm::quat{ 1.0f, 0.0f, 0.0f, 0.0f } *rotationDelta_x * rotationDelta_y * rotationDelta_z;
+
     cube.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
     cube1.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
     cube2.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    cube3.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    cube4.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    cube5.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
-    ball.draw(projection, view, _light,(_cameras[activeCameraIndex])->transform.position,_ambientLight,_spotLight,_material);
+    ball.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    ball1.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    ball2.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
     pris.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
     pyramid.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    pris1.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    pyramid1.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
     land.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
-    glm::quat rotationDelta = glm::angleAxis(angle_cy, glm::vec3(1.0, 0, 0.0));
-    cylinder.transform.rotation = glm::quat{ 1.0f, 0.0f, 0.0f, 0.0f } * rotationDelta;
     cylinder.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    cylinder1.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
+    cylinder2.draw(projection, view, _light, (_cameras[activeCameraIndex])->transform.position, _ambientLight, _spotLight, _material);
 
     // draw ui elements
     ImGui_ImplOpenGL3_NewFrame();
@@ -480,35 +597,33 @@ void Drawing::renderFrame(){
         ImGui::End();
     }
     else {
-        ImGui::Text("Mario Render Mode");
-        ImGui::Separator();
-        ImGui::RadioButton("mario Simple Texture Shading", (int*)&mario_renderMode, (int)(RenderMode::Simple));
-        ImGui::NewLine();
-
-        ImGui::RadioButton("mario Blend Texture Shading", (int*)&mario_renderMode, (int)(RenderMode::Blend));
-        ImGui::ColorEdit3("mario kd1", (float*)&mario._blendMaterial->kds[0]);
-        ImGui::ColorEdit3("mario kd2", (float*)&mario._blendMaterial->kds[1]);
-        ImGui::SliderFloat("mario blend", &mario._blendMaterial->blend, 0.0f, 1.0f);
-        ImGui::NewLine();
-        ImGui::NewLine();
-
         ImGui::Text("Castle Render Mode");
         ImGui::Separator();
         ImGui::RadioButton("castle Simple Texture Shading", (int*)&castle_renderMode, (int)(RenderMode::Simple));
         ImGui::NewLine();
 
-        ImGui::RadioButton("castle Blend Texture Shading", (int*)&castle_renderMode, (int)(RenderMode::Blend));
-        ImGui::ColorEdit3("castle kd1", (float*)&castle._blendMaterial->kds[0]);
-        ImGui::ColorEdit3("castle kd2", (float*)&castle._blendMaterial->kds[1]);
-        ImGui::SliderFloat("castle blend", &castle._blendMaterial->blend, 0.0f, 1.0f);
+        ImGui::RadioButton("castle No texture ", (int*)&castle_renderMode, (int)(RenderMode::Material));
         ImGui::NewLine();
 
+        ImGui::Text("Phong");
+        ImGui::Separator();
+        ImGui::ColorEdit3("castle ka", (float*)&_material->ka);
+        ImGui::ColorEdit3("castle kd", (float*)&_material->kd);
+        ImGui::ColorEdit3("castle ks", (float*)&_material->ks);
+        ImGui::ColorEdit3("castle ns", (float*)&_material->ns);
+        ImGui::NewLine();
+
+        ImGui::Text("Texture of Land");
+        ImGui::Separator();
+        ImGui::ColorEdit3("texture kd", (float*)&land.simpleMaterial->kds[0]);
+        ImGui::ColorEdit3("texture kd1", (float*)&land.simpleMaterial->kds[1]);
+        ImGui::SliderFloat("texture blend", (float*)&land.simpleMaterial->blend,0.0,1.0);
 
         ImGui::Text("Directional light");
         ImGui::Separator();
         ImGui::SliderFloat("intensity_1", &_light->intensity, 0.0f, 3.0f);
         ImGui::ColorEdit3("color_1", (float*)&_light->color);
-        ImGui::SliderFloat("offset_x", &offset_x, 0.0f, 3600.0f);
+        //ImGui::SliderFloat("offset_x", &offset_x, 0.0f, 3600.0f);
         ImGui::SliderFloat("offset_y", &offset_y, 0.0f, 3600.0f);
         ImGui::NewLine();
 
@@ -518,30 +633,40 @@ void Drawing::renderFrame(){
         ImGui::ColorEdit3("color_2", (float*)&_ambientLight->color);
         ImGui::NewLine();
 
-        ImGui::Text("spot light");
-        ImGui::Separator();
-        ImGui::SliderFloat("intensity_3", &_spotLight->intensity, 0.0f, 10.0f);
-        ImGui::ColorEdit3("color_3", (float*)&_spotLight->color);
-        ImGui::SliderFloat(
-            "angle", (float*)&_spotLight->angle, 0.0f, glm::radians(180.0f), "%f rad");
+        ImGui::SliderFloat("length of cube", &cube.transform.scale.x, 5.0f, 20.0f);
         ImGui::NewLine();
 
-        ImGui::SliderFloat("length of cube", &cube.transform.scale.x, 10.0f, 20.0f);
+        ImGui::SliderFloat("height of cube", &cube.transform.scale.y, 5.0f, 20.0f);
         ImGui::NewLine();
 
-        ImGui::SliderFloat("height of cube", &cube.transform.scale.y, 10.0f, 20.0f);
-        ImGui::NewLine();
-
-        ImGui::SliderFloat("width of cube", &cube.transform.scale.z, 10.0f, 20.0f);
-        ImGui::NewLine();
-
-        ImGui::SliderFloat("Angle", &angle_cy, 0.0f, 1.0f);
+        ImGui::SliderFloat("width of cube", &cube.transform.scale.z, 5.0f, 20.0f);
         ImGui::NewLine();
 
         ImGui::SliderFloat("radius", &ball.transform.scale.x, 1.0f, 10.0f);
         ball.transform.scale.y = ball.transform.scale.x;
         ball.transform.scale.z = ball.transform.scale.x;
         ImGui::NewLine();
+
+        ImGui::SliderFloat("scale of cube", &cube.transform.scale.x, 1.0f, 10.0f);
+        cube.transform.scale.y= cube.transform.scale.x;
+        cube.transform.scale.z = cube.transform.scale.x;
+
+        ImGui::NewLine();
+        ImGui::SliderFloat("x position of cube", &cube.transform.position.x, -40.0f, -20.0f);
+        ImGui::NewLine();
+        ImGui::SliderFloat("y position of cube", &cube.transform.position.y, -10.0f, 10.0f);
+        ImGui::NewLine();
+        ImGui::SliderFloat("z position of cube", &cube.transform.position.z, -40.0f, -20.0f);
+        ImGui::NewLine();
+
+        //change the rotate of the cube
+        ImGui::SliderFloat("x rotate of cube", &cubeangle_x, 0.0f, 4.0f);
+        ImGui::NewLine();
+        ImGui::SliderFloat("y rotate of cube", &cubeangle_y, 0.0f, 4.0f);
+        ImGui::NewLine();
+        ImGui::SliderFloat("z rotate of cube", &cubeangle_z, 0.0f, 4.0f);
+        ImGui::NewLine();
+
 
         ImGui::End();
     }

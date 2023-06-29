@@ -28,7 +28,7 @@ void Screenshot::save(const std::string& filename) {
 
     std::stringstream stream;
     stbi_write_png_to_func(writeCallback, &stream, width_, height_, 3, pixelData_.data(), width_ * 3);
-    
+
     file << stream.rdbuf();
 
     std::cout << "Screenshot saved: " << filename << std::endl;

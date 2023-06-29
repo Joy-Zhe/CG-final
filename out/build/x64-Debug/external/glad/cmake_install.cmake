@@ -1,8 +1,8 @@
-# Install script for directory: D:/code/CG-final/external/glad
+# Install script for directory: D:/final/external/glad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "D:/code/CG-final/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "D:/final/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
