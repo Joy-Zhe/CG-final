@@ -647,9 +647,12 @@ void Drawing::renderFrame(){
         ball.transform.scale.z = ball.transform.scale.x;
         ImGui::NewLine();
 
-        ImGui::SliderFloat("scale of cube", &cube.transform.scale.x, 1.0f, 10.0f);
-        cube.transform.scale.y= cube.transform.scale.x;
-        cube.transform.scale.z = cube.transform.scale.x;
+        if (ImGui::SliderFloat("scale of cube", &cube.transform.scale.x, 1.0f, 10.0f))
+        {
+            cube.transform.scale.y = cube.transform.scale.x;
+            cube.transform.scale.z = cube.transform.scale.x;
+        }
+        
 
         ImGui::NewLine();
         ImGui::SliderFloat("x position of cube", &cube.transform.position.x, -40.0f, -20.0f);
